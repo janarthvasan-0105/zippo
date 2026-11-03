@@ -28,7 +28,7 @@ const releaseLabel = (r: string) => (r === 'launch' ? t.shows.atLaunch : fmt(t.s
       {
         shows.map((show, i) => (
           <li data-show-genre={show.genre}>
-            <Poster show={show} lang={lang} eager={i < 4} sizes="(min-width: 1024px) 270px, (min-width: 640px) 30vw, 45vw" />
+            <Poster show={show} lang={lang} level={2} eager={i < 4}sizes="(min-width: 1024px) 270px, (min-width: 640px) 30vw, 45vw" />
             <p class:list={['mt-2 text-xs', show.release === 'launch' ? 'text-mist' : 'font-semibold text-ice']}>{releaseLabel(show.release)}</p>
           </li>
         ))

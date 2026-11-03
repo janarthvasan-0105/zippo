@@ -1,0 +1,287 @@
+{
+  "_review": "machine translation, needs native review",
+  "meta": {
+    "siteName": "Zippo",
+    "tagline": "Drama besar. Episode mungil.",
+    "description": "Zippo adalah rumah baru untuk mini drama: serial vertikal yang bikin ketagihan, dengan episode berdurasi satu menit. Gabung daftar tunggu untuk akses lebih awal."
+  },
+  "nav": {
+    "skip": "Langsung ke konten",
+    "home": "Beranda",
+    "shows": "Serial",
+    "genres": "Genre",
+    "howItWorks": "Cara kerja",
+    "comingSoon": "Segera hadir",
+    "faq": "FAQ",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "press": "Pers",
+    "creators": "Bekerja sama",
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "joinWaitlist": "Gabung daftar tunggu",
+    "menu": "Menu",
+    "language": "Bahasa"
+  },
+  "sample": {
+    "badge": "Contoh",
+    "note": "Judul dan gambar yang ditampilkan hanyalah contoh pratinjau. Daftar tayangan peluncuran akan segera diumumkan."
+  },
+  "waitlist": {
+    "title": "Jadilah yang pertama",
+    "subtitle": "Dapatkan akses lebih awal, koin gratis saat peluncuran, dan intip pertama setiap serial baru.",
+    "emailLabel": "Alamat email",
+    "emailPlaceholder": "kamu@contoh.com",
+    "submit": "Gabung daftar tunggu",
+    "sending": "Bergabung…",
+    "success": "Kamu sudah masuk daftar! Pantau kotak masukmu untuk akses lebih awal.",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "fine": "Tanpa spam. Berhenti berlangganan kapan saja."
+  },
+  "home": {
+    "title": "Zippo: Drama besar. Episode mungil.",
+    "description": "Serial vertikal yang bikin ketagihan dalam episode satu menit. Romansa, balas dendam, miliarder, dan manusia serigala, dibuat untuk ponselmu. Gabung daftar tunggu Zippo.",
+    "hero": {
+      "eyebrow": "Segera diluncurkan",
+      "title1": "Drama besar.",
+      "title2": "Episode mungil.",
+      "subtitle": "Serial vertikal yang bikin ketagihan dalam episode satu menit. Setiap episode berakhir menggantung, jadi “satu lagi” tidak pernah cuma satu.",
+      "secondary": "Jelajahi serial"
+    },
+    "phone": {
+      "episode": "Episode {n}",
+      "caption1": "“Kamu sudah tanda tangan kontraknya. Sekarang kamu milikku.”",
+      "caption2": "“Mereka pernah menguburku. Tidak ada kesempatan kedua.”",
+      "caption3": "“Senyum untuk kamera, sayang. Malam ini kita habisi mereka.”"
+    },
+    "what": {
+      "title": "Apa itu mini drama?",
+      "subtitle": "Satu cerita utuh yang dipotong menjadi episode singkat, direkam vertikal untuk layar di genggamanmu.",
+      "items": [
+        { "title": "Episode satu menit", "body": "Tonton satu episode penuh sambil menunggu kopi. Tamatkan satu serial di perjalanan." },
+        { "title": "Selalu menggantung", "body": "Pewaris rahasia, pernikahan palsu, dan pengkhianatan mengejutkan. Setiap menit berakhir dengan kejutan." },
+        { "title": "Dibuat untuk ponsel", "body": "Direkam vertikal, layar penuh, cukup satu jempol. Tak perlu memutar ponsel." }
+      ]
+    },
+    "trending": {
+      "title": "Intip daftar tayangan pertama",
+      "subtitle": "Sedikit gambaran cerita yang sedang kami buat. Daftar lengkap diumumkan saat peluncuran.",
+      "viewAll": "Lihat semua serial"
+    },
+    "how": {
+      "title": "Cara kerja Zippo",
+      "steps": [
+        { "title": "Pilih cerita", "body": "Jelajahi sesuai suasana hati: romansa, balas dendam, thriller, fantasi, dan lainnya." },
+        { "title": "Tonton episode gratis", "body": "Episode awal setiap serial gratis, tanpa kartu." },
+        { "title": "Buka sisanya", "body": "Pakai koin untuk episode satuan atau tonton sepuasnya dengan keanggotaan." }
+      ]
+    },
+    "why": {
+      "title": "Dibuat untuk caramu menonton",
+      "items": [
+        { "title": "Episode baru setiap hari", "body": "Rilisan baru setiap hari, jadi selalu ada episode berikutnya." },
+        { "title": "Bahasamu", "body": "Subtitel dan sulih suara dalam 12 bahasa saat peluncuran." },
+        { "title": "Gratis untuk mulai", "body": "Mulai menonton tanpa bayar sepeser pun." },
+        { "title": "Pilihan untukmu", "body": "Semakin sering kamu menonton, semakin pas feed-mu." }
+      ]
+    },
+    "creatorsTeaser": {
+      "title": "Punya cerita yang tak bisa menunggu?",
+      "body": "Kami bermitra dengan studio, penulis, dan sutradara untuk daftar tayangan peluncuran.",
+      "cta": "Bekerja sama"
+    }
+  },
+  "shows": {
+    "title": "Serial",
+    "description": "Intip mini drama yang akan hadir di Zippo: romansa, balas dendam, kisah CEO, thriller, fantasi, dan saga manusia serigala.",
+    "heading": "Daftar tayangan",
+    "subtitle": "Cerita seru untuk setiap suasana hati. Intip yang akan datang.",
+    "all": "Semua",
+    "episodes": "{n} episode",
+    "atLaunch": "Saat peluncuran",
+    "premieres": "Tayang perdana {date}"
+  },
+  "genres": {
+    "title": "Genre",
+    "description": "Jelajahi mini drama Zippo sesuai suasana hati: romansa, balas dendam, CEO, thriller, fantasi, dan manusia serigala.",
+    "heading": "Temukan drama favoritmu",
+    "subtitle": "Apa pun suasana hatimu, ada cerita yang menunggu.",
+    "count": "{n} serial",
+    "browse": "Jelajahi {genre}",
+    "names": {
+      "romance": "Romansa",
+      "revenge": "Balas dendam",
+      "ceo": "CEO",
+      "thriller": "Thriller",
+      "fantasy": "Fantasi",
+      "werewolf": "Manusia serigala"
+    },
+    "blurbs": {
+      "romance": "Cinta perlahan, kesempatan kedua, dan cinta yang melanggar semua aturan.",
+      "revenge": "Diremehkan, dikhianati, dan kembali untuk merebut segalanya.",
+      "ceo": "Miliarder, kontrak, dan rahasia ruang rapat.",
+      "thriller": "Pintu terkunci, jam yang hilang, dan tak ada yang bisa dipercaya.",
+      "fantasy": "Kerajaan tersembunyi, kutukan kuno, dan kekuatan terlarang.",
+      "werewolf": "Pasangan takdir, kawanan saingan, dan bulan yang mengubah segalanya."
+    }
+  },
+  "howItWorks": {
+    "title": "Cara kerja",
+    "description": "Cara kerja Zippo: episode gratis, koin, keanggotaan, dan perangkat yang bisa kamu gunakan.",
+    "heading": "Cara kerja Zippo",
+    "subtitle": "Mudah untuk mulai, mustahil untuk berhenti.",
+    "steps": [
+      { "title": "Unduh aplikasinya", "body": "Dapatkan Zippo gratis di iPhone dan Android saat peluncuran." },
+      { "title": "Pilih cerita", "body": "Jelajahi berdasarkan genre atau biarkan feed-mu menemukan obsesi berikutnya." },
+      { "title": "Tonton episode gratis", "body": "Episode pembuka setiap serial selalu gratis." },
+      { "title": "Terus menonton", "body": "Buka lebih banyak dengan koin, atau tonton sepuasnya dengan keanggotaan." }
+    ],
+    "plansTitle": "Cara menonton",
+    "plans": [
+      { "name": "Gratis", "body": "Episode pertama setiap serial, plus buka gratis harian." },
+      { "name": "Koin", "body": "Isi ulang dan buka episode yang kamu mau saja. Koin tidak pernah kedaluwarsa." },
+      { "name": "Keanggotaan", "body": "Episode tanpa batas, tanpa iklan, dan akses lebih awal ke rilisan baru." }
+    ],
+    "plansNote": "Harga akan diumumkan saat peluncuran.",
+    "devicesTitle": "Tempat menonton",
+    "devicesBody": "Zippo dibuat untuk ponsel lebih dulu: iPhone dan Android saat peluncuran, disusul web dan TV."
+  },
+  "comingSoon": {
+    "title": "Segera hadir",
+    "description": "Zippo segera diluncurkan. Lihat hitung mundur, serial pertama dalam daftar tayangan, dan gabung daftar tunggu untuk akses lebih awal.",
+    "heading": "Hitung mundur dimulai",
+    "subtitle": "Zippo segera dibuka. Anggota daftar tunggu masuk lebih dulu.",
+    "days": "Hari",
+    "hours": "Jam",
+    "minutes": "Menit",
+    "seconds": "Detik",
+    "dateNote": "Target tanggal peluncuran. Dapat berubah.",
+    "slateTitle": "Tayang perdana pertama",
+    "slateSubtitle": "Serial orisinal pertama yang sedang diproduksi untuk peluncuran."
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Jawaban atas pertanyaan umum tentang Zippo: harga, episode, perangkat, bahasa, dan peluncuran.",
+    "heading": "Pertanyaan yang sering diajukan",
+    "subtitle": "Semua yang perlu kamu tahu sebelum peluncuran.",
+    "items": [
+      { "q": "Apa itu Zippo?", "a": "Zippo adalah aplikasi streaming mini drama: cerita utuh dalam episode vertikal pendek berdurasi sekitar satu menit." },
+      { "q": "Kapan Zippo diluncurkan?", "a": "Segera! Gabung daftar tunggu dan jadilah yang pertama tahu, dengan akses lebih awal sebelum peluncuran publik." },
+      { "q": "Apakah Zippo gratis?", "a": "Zippo gratis diunduh, dan episode pertama setiap serial gratis. Kamu bisa membuka lebih banyak dengan koin atau keanggotaan." },
+      { "q": "Berapa lama satu episode?", "a": "Sebagian besar episode berdurasi satu hingga tiga menit. Satu serial lengkap biasanya punya 50 hingga 100 episode." },
+      { "q": "Perangkat apa yang bisa dipakai?", "a": "iPhone dan Android saat peluncuran. Aplikasi web dan TV menyusul." },
+      { "q": "Bahasa apa saja yang didukung?", "a": "Subtitel dan audio sulih suara dalam 12 bahasa saat peluncuran, dan akan terus bertambah." },
+      { "q": "Apa keuntungan gabung daftar tunggu?", "a": "Akses lebih awal sebelum peluncuran publik, koin gratis di hari pertama, dan intip pertama serial baru." },
+      { "q": "Bisakah episode diunduh untuk ditonton offline?", "a": "Menonton offline direncanakan untuk anggota tak lama setelah peluncuran." }
+    ],
+    "more": "Masih ada pertanyaan?",
+    "contact": "Hubungi kami"
+  },
+  "about": {
+    "title": "Tentang",
+    "description": "Zippo sedang membangun rumah bagi mini drama: cerita besar, satu menit setiap kali.",
+    "heading": "Cerita besar, satu menit setiap kali",
+    "lead": "Kami percaya cerita terbaik tidak butuh dua jam. Cukup hook yang kuat, hati, dan akhir menggantung yang tak mau lepas.",
+    "sections": [
+      { "title": "Mengapa kami membangun Zippo", "body": "Ratusan juta orang sudah menonton drama di ponsel dalam waktu singkat. Zippo dibangun untuk itu sejak awal: vertikal, cepat, dan bikin susah berhenti." },
+      { "title": "Apa yang kami buat", "body": "Serial orisinal bergenre romansa, balas dendam, thriller, fantasi, dan lainnya, diproduksi bersama studio dan pencerita dari seluruh dunia." },
+      { "title": "Ke mana kami melangkah", "body": "Satu aplikasi, semua bahasa, cerita dari mana saja. Kami mulai dengan serangkaian serial orisinal dan terus berkembang." }
+    ]
+  },
+  "contact": {
+    "title": "Kontak",
+    "description": "Hubungi tim Zippo untuk dukungan, kemitraan, atau pers.",
+    "heading": "Hubungi kami",
+    "subtitle": "Pertanyaan, ide, atau kemitraan, kami membaca setiap pesan.",
+    "name": "Nama kamu",
+    "email": "Alamat email",
+    "topic": "Topik",
+    "topics": {
+      "general": "Pertanyaan umum",
+      "support": "Dukungan",
+      "partnership": "Kemitraan",
+      "press": "Pers"
+    },
+    "message": "Pesan",
+    "submit": "Kirim pesan",
+    "sending": "Mengirim…",
+    "success": "Terima kasih! Kami akan segera membalas.",
+    "error": "Terjadi kesalahan. Silakan coba lagi atau kirim email langsung.",
+    "direct": "Lebih suka email?"
+  },
+  "press": {
+    "title": "Pers",
+    "description": "Kit pers Zippo: lembar fakta, aset merek, dan kontak media.",
+    "heading": "Pers & media",
+    "subtitle": "Semua yang kamu butuhkan untuk menulis tentang Zippo.",
+    "factsTitle": "Lembar fakta",
+    "facts": [
+      { "label": "Apa", "value": "Aplikasi streaming mini drama: serial vertikal dalam episode satu menit" },
+      { "label": "Peluncuran", "value": "Segera hadir di iPhone dan Android" },
+      { "label": "Genre", "value": "Romansa, balas dendam, CEO, thriller, fantasi, manusia serigala" },
+      { "label": "Bahasa", "value": "12 saat peluncuran" }
+    ],
+    "kitTitle": "Aset merek",
+    "kitBody": "Logo dan ikon aplikasi kami. Mohon jangan mengubah warna atau proporsinya.",
+    "logo": "Unduh logo (SVG)",
+    "icon": "Unduh ikon (SVG)",
+    "contactTitle": "Kontak media",
+    "contactBody": "Untuk wawancara, screener, dan berita peluncuran, kirim email ke tim pers kami."
+  },
+  "creators": {
+    "title": "Bekerja sama",
+    "description": "Studio, penulis, dan sutradara: ajukan mini drama kalian ke Zippo.",
+    "heading": "Bawa ceritamu ke Zippo",
+    "subtitle": "Kami bermitra dengan studio, penulis, dan sutradara untuk daftar tayangan peluncuran.",
+    "points": [
+      { "title": "Studio", "body": "Produksi bersama atau lisensikan serial jadi untuk penonton global yang mengutamakan ponsel." },
+      { "title": "Penulis", "body": "Ajukan hook, dunia cerita, dan akhir menggantung. Kami kembangkan bersamamu." },
+      { "title": "Sutradara & talenta", "body": "Bergabung dengan produksi untuk penceritaan vertikal dan berepisode." }
+    ],
+    "formTitle": "Ajukan idemu",
+    "name": "Nama kamu",
+    "email": "Alamat email",
+    "company": "Studio atau perusahaan (opsional)",
+    "link": "Tautan ke karyamu (opsional)",
+    "pitch": "Idemu dalam beberapa kalimat",
+    "submit": "Kirim ide",
+    "sending": "Mengirim…",
+    "success": "Terima kasih! Tim konten kami akan meninjau idemu.",
+    "error": "Terjadi kesalahan. Silakan coba lagi."
+  },
+  "legal": {
+    "privacyTitle": "Kebijakan Privasi",
+    "termsTitle": "Ketentuan Layanan",
+    "privacyDescription": "Cara Zippo mengumpulkan, menggunakan, dan melindungi informasimu.",
+    "termsDescription": "Ketentuan yang berlaku saat kamu menggunakan Zippo.",
+    "notice": "Sementara: halaman ini akan diganti dengan teks hukum final sebelum peluncuran.",
+    "updated": "Terakhir diperbarui: {date}",
+    "privacy": [
+      { "title": "Apa yang kami kumpulkan", "body": "Saat kamu bergabung dengan daftar tunggu, kami mengumpulkan alamat email dan bahasa pilihanmu. Saat kamu menghubungi kami, kami mengumpulkan apa yang kamu kirim." },
+      { "title": "Cara kami menggunakannya", "body": "Untuk mengirim kabar peluncuran dan akses lebih awal, serta membalas pesanmu. Kami tidak pernah menjual informasi pribadimu." },
+      { "title": "Pilihanmu", "body": "Kamu bisa berhenti berlangganan kapan saja lewat tautan di email kami, atau meminta kami menghapus datamu." },
+      { "title": "Kontak", "body": "Ada pertanyaan soal privasi? Kirim email dan kami akan membantu." }
+    ],
+    "terms": [
+      { "title": "Penggunaan situs ini", "body": "Situs ini memberikan informasi tentang Zippo sebelum peluncuran. Konten dapat berubah sewaktu-waktu." },
+      { "title": "Konten", "body": "Judul dan gambar serial di situs ini adalah pratinjau dan dapat berubah. Semua merek dagang milik pemiliknya masing-masing." },
+      { "title": "Aplikasi", "body": "Aplikasi Zippo akan memiliki ketentuan tersendiri yang diterbitkan saat peluncuran." },
+      { "title": "Kontak", "body": "Ada pertanyaan soal ketentuan ini? Kirim email kepada kami." }
+    ]
+  },
+  "footer": {
+    "tagline": "Drama besar. Episode mungil.",
+    "explore": "Jelajahi",
+    "company": "Perusahaan",
+    "legal": "Hukum",
+    "follow": "Ikuti kami",
+    "rights": "© {year} Zippo. Hak cipta dilindungi.",
+    "photos": "Foto: Unsplash"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "heading": "Episode ini tidak ada",
+    "body": "Halaman yang kamu cari sudah dipindahkan atau tidak pernah tayang.",
+    "cta": "Kembali ke beranda"
+  }
+}

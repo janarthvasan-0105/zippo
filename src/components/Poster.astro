@@ -9,9 +9,12 @@ interface Props {
   /** Image `sizes` hint for the layout the poster sits in. */
   sizes?: string;
   eager?: boolean;
+  /** Heading level of the title, so it follows the page's outline. */
+  level?: 2 | 3;
 }
-const { show, lang, sizes = '(min-width: 1024px) 240px, 45vw', eager = false } = Astro.props;
+const { show, lang, sizes = '(min-width: 1024px) 240px, 45vw', eager = false, level = 3 } = Astro.props;
 const t = getDict(lang);
+const Heading = `h${level}`;
 ---
 
 <article class="group relative aspect-[2/3] overflow-hidden rounded-3xl border border-steel/20 bg-navy">
@@ -32,7 +35,7 @@ const t = getDict(lang);
 
   <div class="absolute inset-x-0 bottom-0 p-4">
     <p class="eyebrow text-[10px]">{t.genres.names[show.genre]}</p>
-    <h3 class="mt-1 text-lg leading-snug font-bold text-ice" style="font-family: 'Playfair Display Variable', Georgia, serif" dir="ltr">{show.title}</h3>
+    <Heading class="mt-1 text-lg leading-snug font-bold text-ice" style="font-family: 'Playfair Display Variable', Georgia, serif" dir="ltr">{show.title}</Heading>
     <p class="mt-1 text-xs text-mist">{fmt(t.shows.episodes, { n: show.episodes.toLocaleString(lang) })}</p>
   </div>
 </article>

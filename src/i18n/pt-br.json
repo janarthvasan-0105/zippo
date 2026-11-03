@@ -1,0 +1,287 @@
+{
+  "_review": "machine translation, needs native review",
+  "meta": {
+    "siteName": "Zippo",
+    "tagline": "Drama grande. Episódios curtinhos.",
+    "description": "Zippo é a nova casa dos minidramas: séries verticais viciantes contadas em episódios de um minuto. Entre na lista de espera para ter acesso antecipado."
+  },
+  "nav": {
+    "skip": "Pular para o conteúdo",
+    "home": "Início",
+    "shows": "Séries",
+    "genres": "Gêneros",
+    "howItWorks": "Como funciona",
+    "comingSoon": "Em breve",
+    "faq": "Perguntas",
+    "about": "Sobre",
+    "contact": "Contato",
+    "press": "Imprensa",
+    "creators": "Trabalhe conosco",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "joinWaitlist": "Entrar na lista",
+    "menu": "Menu",
+    "language": "Idioma"
+  },
+  "sample": {
+    "badge": "Amostra",
+    "note": "Os títulos e imagens são amostras para pré-visualização. A programação de lançamento será anunciada em breve."
+  },
+  "waitlist": {
+    "title": "Seja um dos primeiros",
+    "subtitle": "Acesso antecipado, moedas grátis no lançamento e uma prévia de cada nova série.",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "voce@exemplo.com",
+    "submit": "Entrar na lista de espera",
+    "sending": "Entrando…",
+    "success": "Você está na lista! Fique de olho no seu e-mail para o acesso antecipado.",
+    "error": "Algo deu errado. Tente novamente.",
+    "fine": "Sem spam. Cancele quando quiser."
+  },
+  "home": {
+    "title": "Zippo: Drama grande. Episódios curtinhos.",
+    "description": "Séries verticais viciantes em episódios de um minuto. Romance, vingança, bilionários e lobisomens, feitos para o seu celular. Entre na lista de espera do Zippo.",
+    "hero": {
+      "eyebrow": "Em breve",
+      "title1": "Drama grande.",
+      "title2": "Episódios curtinhos.",
+      "subtitle": "Séries verticais viciantes contadas em episódios de um minuto. Todo episódio termina num gancho, então “só mais um” nunca é só mais um.",
+      "secondary": "Conhecer as séries"
+    },
+    "phone": {
+      "episode": "Episódio {n}",
+      "caption1": "“Você assinou o contrato. Agora você é minha.”",
+      "caption2": "“Eles me enterraram uma vez. Não terão uma segunda chance.”",
+      "caption3": "“Sorria para as câmeras, querida. Hoje à noite acabamos com eles.”"
+    },
+    "what": {
+      "title": "O que é um minidrama?",
+      "subtitle": "Uma história completa dividida em episódios curtinhos, gravada na vertical para a tela que está na sua mão.",
+      "items": [
+        { "title": "Episódios de um minuto", "body": "Assista a um episódio inteiro enquanto o café fica pronto. Termine uma série no trajeto." },
+        { "title": "Um gancho em todo episódio", "body": "Herdeiros secretos, casamentos de fachada e traições chocantes. Cada minuto termina com uma reviravolta." },
+        { "title": "Feito para o celular", "body": "Gravado na vertical, tela cheia, com um dedo só. Nunca precisa virar o celular." }
+      ]
+    },
+    "trending": {
+      "title": "Uma prévia da programação",
+      "subtitle": "Um gostinho das histórias que estamos criando. A lista completa será anunciada no lançamento.",
+      "viewAll": "Ver todas as séries"
+    },
+    "how": {
+      "title": "Como o Zippo funciona",
+      "steps": [
+        { "title": "Escolha uma história", "body": "Navegue pelo seu humor: romance, vingança, suspense, fantasia e mais." },
+        { "title": "Assista a episódios grátis", "body": "Os primeiros episódios de cada série são grátis, sem cartão." },
+        { "title": "Desbloqueie o resto", "body": "Use moedas para episódios avulsos ou assista sem limites com uma assinatura." }
+      ]
+    },
+    "why": {
+      "title": "Feito para o seu jeito de assistir",
+      "items": [
+        { "title": "Episódios novos todo dia", "body": "Lançamentos diários, então sempre tem um próximo episódio." },
+        { "title": "No seu idioma", "body": "Legendas e dublagem em 12 idiomas no lançamento." },
+        { "title": "Grátis para começar", "body": "Comece a assistir sem pagar nada." },
+        { "title": "Escolhas para você", "body": "Quanto mais você assiste, melhor fica o seu feed." }
+      ]
+    },
+    "creatorsTeaser": {
+      "title": "Tem uma história que não pode esperar?",
+      "body": "Estamos fechando parcerias com estúdios, roteiristas e diretores para a nossa programação de lançamento.",
+      "cta": "Trabalhe conosco"
+    }
+  },
+  "shows": {
+    "title": "Séries",
+    "description": "Uma prévia dos minidramas que chegam ao Zippo: romance, vingança, histórias de CEO, suspense, fantasia e sagas de lobisomem.",
+    "heading": "A programação",
+    "subtitle": "Histórias para todos os humores. Uma prévia do que vem por aí.",
+    "all": "Todas",
+    "episodes": "{n} episódios",
+    "atLaunch": "No lançamento",
+    "premieres": "Estreia: {date}"
+  },
+  "genres": {
+    "title": "Gêneros",
+    "description": "Navegue pelos minidramas do Zippo por humor: romance, vingança, CEO, suspense, fantasia e lobisomem.",
+    "heading": "Encontre o seu tipo de drama",
+    "subtitle": "Seja qual for o seu humor, tem uma história esperando por você.",
+    "count": "{n} séries",
+    "browse": "Ver {genre}",
+    "names": {
+      "romance": "Romance",
+      "revenge": "Vingança",
+      "ceo": "CEO",
+      "thriller": "Suspense",
+      "fantasy": "Fantasia",
+      "werewolf": "Lobisomem"
+    },
+    "blurbs": {
+      "romance": "Amores em fogo brando, segundas chances e um amor que quebra todas as regras.",
+      "revenge": "Subestimados, traídos e de volta para tomar tudo.",
+      "ceo": "Bilionários, contratos e segredos da sala de reuniões.",
+      "thriller": "Portas trancadas, horas perdidas e ninguém em quem confiar.",
+      "fantasy": "Reinos ocultos, maldições antigas e poderes proibidos.",
+      "werewolf": "Almas destinadas, alcateias rivais e uma lua que muda tudo."
+    }
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "description": "Como o Zippo funciona: episódios grátis, moedas, assinatura e os aparelhos em que você pode assistir.",
+    "heading": "Como o Zippo funciona",
+    "subtitle": "Fácil de começar, impossível de parar.",
+    "steps": [
+      { "title": "Baixe o app", "body": "Baixe o Zippo grátis no iPhone e no Android no lançamento." },
+      { "title": "Escolha uma história", "body": "Navegue por gênero ou deixe o seu feed encontrar a sua próxima obsessão." },
+      { "title": "Assista a episódios grátis", "body": "Os primeiros episódios de toda série são sempre grátis." },
+      { "title": "Continue assistindo", "body": "Desbloqueie mais com moedas ou assista sem limites com uma assinatura." }
+    ],
+    "plansTitle": "Formas de assistir",
+    "plans": [
+      { "name": "Grátis", "body": "Os primeiros episódios de cada série, mais desbloqueios grátis diários." },
+      { "name": "Moedas", "body": "Recarregue e desbloqueie exatamente os episódios que quiser. As moedas nunca expiram." },
+      { "name": "Assinatura", "body": "Episódios ilimitados, sem anúncios e acesso antecipado aos lançamentos." }
+    ],
+    "plansNote": "Os preços serão anunciados no lançamento.",
+    "devicesTitle": "Onde assistir",
+    "devicesBody": "O Zippo foi feito primeiro para celulares: iPhone e Android no lançamento, e depois web e TV."
+  },
+  "comingSoon": {
+    "title": "Em breve",
+    "description": "O Zippo está chegando. Veja a contagem regressiva, as primeiras séries da programação e entre na lista de espera para ter acesso antecipado.",
+    "heading": "A contagem regressiva começou",
+    "subtitle": "O Zippo abre as portas em breve. Quem está na lista de espera entra primeiro.",
+    "days": "Dias",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos",
+    "dateNote": "Data prevista de lançamento. Sujeita a alterações.",
+    "slateTitle": "Primeiras estreias",
+    "slateSubtitle": "As primeiras produções originais para o lançamento."
+  },
+  "faq": {
+    "title": "Perguntas",
+    "description": "Respostas para perguntas frequentes sobre o Zippo: preços, episódios, aparelhos, idiomas e lançamento.",
+    "heading": "Perguntas frequentes",
+    "subtitle": "Tudo o que você precisa saber antes do lançamento.",
+    "items": [
+      { "q": "O que é o Zippo?", "a": "O Zippo é um app de streaming de minidramas: histórias completas contadas em episódios verticais curtos de cerca de um minuto." },
+      { "q": "Quando o Zippo será lançado?", "a": "Em breve! Entre na lista de espera e seja o primeiro a saber, com acesso antecipado antes do lançamento público." },
+      { "q": "O Zippo é grátis?", "a": "Baixar o Zippo é grátis, e os primeiros episódios de cada série também. Você pode desbloquear mais com moedas ou uma assinatura." },
+      { "q": "Quanto dura um episódio?", "a": "A maioria dura de um a três minutos. Uma série completa costuma ter de 50 a 100 episódios." },
+      { "q": "Em quais aparelhos posso assistir?", "a": "iPhone e Android no lançamento. Os apps para web e TV virão depois." },
+      { "q": "Quais idiomas estão disponíveis?", "a": "Legendas e áudio dublado em 12 idiomas no lançamento, e mais a caminho." },
+      { "q": "O que ganho ao entrar na lista de espera?", "a": "Acesso antecipado antes do lançamento público, moedas grátis no primeiro dia e prévias das novas séries." },
+      { "q": "Posso baixar episódios para assistir off-line?", "a": "A visualização off-line está prevista para assinantes logo após o lançamento." }
+    ],
+    "more": "Ainda tem dúvidas?",
+    "contact": "Fale conosco"
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "O Zippo está criando a casa dos minidramas: grandes histórias, um minuto de cada vez.",
+    "heading": "Grandes histórias, um minuto de cada vez",
+    "lead": "Acreditamos que as melhores histórias não precisam de duas horas. Precisam de um gancho, de coração e de um final que não te deixa ir embora.",
+    "sections": [
+      { "title": "Por que estamos criando o Zippo", "body": "Centenas de milhões de pessoas já assistem dramas no celular em momentos curtos. O Zippo foi feito para isso desde o início: vertical, rápido e impossível de largar." },
+      { "title": "O que fazemos", "body": "Séries originais de romance, vingança, suspense, fantasia e mais, produzidas com estúdios e contadores de histórias do mundo todo." },
+      { "title": "Para onde vamos", "body": "Um app, todos os idiomas, histórias de todo lugar. Começamos com uma seleção de originais e vamos crescer a partir daí." }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Fale com a equipe do Zippo sobre suporte, parcerias ou imprensa.",
+    "heading": "Fale conosco",
+    "subtitle": "Dúvidas, ideias ou parcerias: lemos todas as mensagens.",
+    "name": "Seu nome",
+    "email": "E-mail",
+    "topic": "Assunto",
+    "topics": {
+      "general": "Dúvida geral",
+      "support": "Suporte",
+      "partnership": "Parceria",
+      "press": "Imprensa"
+    },
+    "message": "Mensagem",
+    "submit": "Enviar mensagem",
+    "sending": "Enviando…",
+    "success": "Obrigado! Responderemos em breve.",
+    "error": "Algo deu errado. Tente novamente ou envie um e-mail diretamente.",
+    "direct": "Prefere e-mail?"
+  },
+  "press": {
+    "title": "Imprensa",
+    "description": "Kit de imprensa do Zippo: ficha técnica, materiais da marca e contato para a mídia.",
+    "heading": "Imprensa e mídia",
+    "subtitle": "Tudo o que você precisa para escrever sobre o Zippo.",
+    "factsTitle": "Ficha técnica",
+    "facts": [
+      { "label": "O quê", "value": "Um app de streaming de minidramas: séries verticais em episódios de um minuto" },
+      { "label": "Lançamento", "value": "Em breve no iPhone e no Android" },
+      { "label": "Gêneros", "value": "Romance, vingança, CEO, suspense, fantasia, lobisomem" },
+      { "label": "Idiomas", "value": "12 no lançamento" }
+    ],
+    "kitTitle": "Materiais da marca",
+    "kitBody": "Nosso logotipo e ícone do app. Por favor, não altere as cores nem as proporções.",
+    "logo": "Baixar logotipo (SVG)",
+    "icon": "Baixar ícone (SVG)",
+    "contactTitle": "Contato para a mídia",
+    "contactBody": "Para entrevistas, prévias e notícias do lançamento, envie um e-mail para a nossa equipe de imprensa."
+  },
+  "creators": {
+    "title": "Trabalhe conosco",
+    "description": "Estúdios, roteiristas e diretores: apresentem o seu minidrama ao Zippo.",
+    "heading": "Traga a sua história para o Zippo",
+    "subtitle": "Estamos fechando parcerias com estúdios, roteiristas e diretores para a nossa programação de lançamento.",
+    "points": [
+      { "title": "Estúdios", "body": "Coproduza ou licencie séries prontas para um público global e mobile." },
+      { "title": "Roteiristas", "body": "Apresente um gancho, um mundo e um final de tirar o fôlego. Desenvolvemos com você." },
+      { "title": "Diretores e elenco", "body": "Participe de produções pensadas para narrativas verticais e episódicas." }
+    ],
+    "formTitle": "Apresente sua ideia",
+    "name": "Seu nome",
+    "email": "E-mail",
+    "company": "Estúdio ou empresa (opcional)",
+    "link": "Link para o seu trabalho (opcional)",
+    "pitch": "Sua proposta em poucas linhas",
+    "submit": "Enviar proposta",
+    "sending": "Enviando…",
+    "success": "Obrigado! Nossa equipe de conteúdo vai analisar a sua proposta.",
+    "error": "Algo deu errado. Tente novamente."
+  },
+  "legal": {
+    "privacyTitle": "Política de Privacidade",
+    "termsTitle": "Termos de Serviço",
+    "privacyDescription": "Como o Zippo coleta, usa e protege as suas informações.",
+    "termsDescription": "Os termos que se aplicam quando você usa o Zippo.",
+    "notice": "Provisório: esta página será substituída pelo texto jurídico final antes do lançamento.",
+    "updated": "Última atualização: {date}",
+    "privacy": [
+      { "title": "O que coletamos", "body": "Quando você entra na lista de espera, coletamos o seu e-mail e o seu idioma preferido. Quando você entra em contato, coletamos o que você envia." },
+      { "title": "Como usamos", "body": "Para enviar novidades do lançamento e acesso antecipado, e para responder às suas mensagens. Nunca vendemos as suas informações pessoais." },
+      { "title": "Suas escolhas", "body": "Você pode cancelar a inscrição a qualquer momento pelo link nos nossos e-mails ou pedir que apaguemos os seus dados." },
+      { "title": "Contato", "body": "Dúvidas sobre privacidade? Envie um e-mail e vamos ajudar." }
+    ],
+    "terms": [
+      { "title": "Uso deste site", "body": "Este site oferece informações sobre o Zippo antes do lançamento. O conteúdo pode mudar a qualquer momento." },
+      { "title": "Conteúdo", "body": "Os títulos e imagens das séries neste site são prévias e podem mudar. Todas as marcas pertencem aos seus donos." },
+      { "title": "O app", "body": "O app do Zippo terá termos próprios, que serão publicados no lançamento." },
+      { "title": "Contato", "body": "Dúvidas sobre estes termos? Envie um e-mail." }
+    ]
+  },
+  "footer": {
+    "tagline": "Drama grande. Episódios curtinhos.",
+    "explore": "Explorar",
+    "company": "Empresa",
+    "legal": "Jurídico",
+    "follow": "Siga a gente",
+    "rights": "© {year} Zippo. Todos os direitos reservados.",
+    "photos": "Fotos: Unsplash"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "heading": "Este episódio não existe",
+    "body": "A página que você procura mudou de lugar ou nunca foi ao ar.",
+    "cta": "Voltar ao início"
+  }
+}
