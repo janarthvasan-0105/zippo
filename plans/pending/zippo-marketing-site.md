@@ -131,7 +131,8 @@ Gate 1 and gate 2 answered 2026-11-03.
 | Fonts | Playfair Display (headlines) + Inter (body), Noto Sans families for non-Latin scripts | User accepted the recommendation; self-hosted via Fontsource |
 | Pages | Home, Shows, Genres, How it works, Coming soon, About, FAQ, Contact, Press, Work with us (`/creators`), Privacy, Terms, 404 | User accepted the 4 recommended extras |
 | Locales | en, hi, es, pt-BR, id, th, vi, fil, ja, ko, zh-Hans, ar (RTL) | User accepted. Non-English copy machine-translated and flagged for native review |
-| Domain | `zippo.com`, set via one `SITE_URL` config value | User-supplied; connected in Vercel by the user at deploy |
+| Domain | `zippostreaming.com` (changed from `zippo.com` at deploy), set via one `SITE_URL` config value | User-supplied; connected in Vercel by the user at deploy |
+| Web3Forms key (execution) | Committed as the default in `src/config.ts`, env var overrides | The key is public by design; committing it means the first Vercel deploy has working forms with no env setup |
 | Forms | Web3Forms (Formspree as fallback) | User allowed either; Web3Forms needs only an access key, no dashboard setup |
 | Languages | Multi-language (i18n routing `/{lang}/…`) | User: "all languages"; the exact locale list is set in gate 2 |
 | Hosting | Vercel + user's existing domain | User |
@@ -147,8 +148,8 @@ Gate 1 and gate 2 answered 2026-11-03.
 ## Not yet specified
 - Phase 2: real trailer footage, show titles, posters — placeholders until you supply them
 - Phase 3: legal page text — must come from you
-- Phase 5: user supplies a Web3Forms access key and connects `zippo.com` in Vercel (third-party actions; build pauses here and confirms both are done before measuring the live site)
-- Risk: "Zippo" is a well-known existing trademark (Zippo lighters, which uses zippo.com). User confirmed ownership; domain lives in one config value so it is a one-line change if needed
+- Phase 5: key supplied; repo `janarthvasan-0105/zippo`. User imports it in Vercel and connects `zippostreaming.com` (third-party actions; confirm before measuring the live site)
+- Risk: "Zippo" is a well-known existing trademark (Zippo lighters). The domain is now zippostreaming.com, but the brand name itself may still need a trademark check
 
 ## Always / Never
 - Always: mobile-first, dark-first cinematic look, accessible, fast, real numbers only in social proof
@@ -163,4 +164,4 @@ Gate 1 and gate 2 answered 2026-11-03.
 | 3 Secondary pages | done |
 | 3b i18n | done: 12 locales, build-time key check passes |
 | 4 SEO/analytics | done: Lighthouse mobile (home/shows/ja coming-soon) perf 97–99, a11y 100, SEO 100, BP 96 (local-only analytics 404). Shows LCP 2.51s vs 2.5s target |
-| 5 Deploy | blocked on user: Web3Forms key, GitHub repo + Vercel project, domain DNS |
+| 5 Deploy | code pushed to GitHub; blocked on user: Vercel import, Analytics, domain DNS |

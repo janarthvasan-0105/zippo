@@ -15,7 +15,7 @@ npm run preview    # serve dist/ locally
 npm run og         # regenerate public/og.png (social share image)
 ```
 
-Copy `.env.example` to `.env` and set `PUBLIC_WEB3FORMS_KEY` so the forms work locally.
+The forms post to Web3Forms with the key in `src/config.ts` (public by design); `PUBLIC_WEB3FORMS_KEY` in `.env` overrides it.
 
 ## Where things live
 
@@ -50,9 +50,9 @@ and add its copy to all 12 JSON files.
 ## Deploy (Vercel)
 
 1. Push this repo to GitHub and import it in Vercel (framework preset: Astro, auto-detected).
-2. Environment variables: `PUBLIC_WEB3FORMS_KEY` (from web3forms.com) and, if the domain differs, `SITE_URL`.
+2. No environment variables are required. Set `SITE_URL` only if the domain is not `https://zippostreaming.com`.
 3. Enable **Web Analytics** in the Vercel project (the site already loads its script in production).
-4. Add the custom domain under Project → Settings → Domains and follow the DNS instructions.
+4. Add `zippostreaming.com` (and `www.zippostreaming.com`, redirecting to it) under Project → Settings → Domains and follow the DNS instructions.
 
 ## Known follow-up
 

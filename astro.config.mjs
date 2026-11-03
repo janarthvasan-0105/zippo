@@ -5,7 +5,7 @@ import { locales, defaultLocale } from './src/i18n/locales.mjs';
 
 // The production domain. Change it here (or set SITE_URL in Vercel) and every
 // canonical URL, hreflang link, sitemap entry and OG image URL follows.
-const site = process.env.SITE_URL ?? 'https://zippo.com';
+const site = process.env.SITE_URL ?? 'https://zippostreaming.com';
 
 export default defineConfig({
   site,

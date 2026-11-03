@@ -5,10 +5,10 @@ export const LAUNCH_DATE = '2027-03-01T00:00:00Z';
 
 /** PLACEHOLDER: public inboxes. */
 export const EMAILS = {
-  hello: 'hello@zippo.com',
-  support: 'support@zippo.com',
-  press: 'press@zippo.com',
-  studios: 'studios@zippo.com',
+  hello: 'hello@zippostreaming.com',
+  support: 'support@zippostreaming.com',
+  press: 'press@zippostreaming.com',
+  studios: 'studios@zippostreaming.com',
 };
 
 /** PLACEHOLDER: social profiles. */
@@ -19,5 +19,5 @@ export const SOCIALS = [
   { name: 'X', url: 'https://x.com/' },
 ];
 
-/** Web3Forms access key (public by design). Set PUBLIC_WEB3FORMS_KEY in .env and in Vercel. */
-export const WEB3FORMS_KEY = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '';
+/** Web3Forms access key. Public by design (it ships in every form's HTML); PUBLIC_WEB3FORMS_KEY overrides it. */
+export const WEB3FORMS_KEY = import.meta.env.PUBLIC_WEB3FORMS_KEY || 'd883ff58-d16a-4763-b96b-66b1b9e215c1';
