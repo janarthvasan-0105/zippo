@@ -1,6 +1,6 @@
 # Zippo — Landing Page & Marketing Site
 Ticket: none yet (no tracker chosen)
-Status: DRAFT: gate 1 answered; gate 2 (dependent questions) open, then approval
+Status: FINAL DRAFT: all questions answered; awaiting approval
 
 ## Goal
 A fast, mobile-first marketing site for **Zippo**, a mini drama platform (short, vertical,
@@ -11,7 +11,8 @@ that into one measurable action: **join the waitlist / download the app** (decid
 - Lighthouse mobile: Performance ≥ 90, Accessibility ≥ 95, SEO ≥ 95, Best Practices ≥ 95
 - LCP < 2.5s on simulated 4G; page weight on the home page < 1.5 MB (video lazy-loaded)
 - Primary CTA visible above the fold at 375px width, and repeated at least twice down the page
-- No horizontal scroll from 320px to 1920px; works in light *and* dark OS settings (dark-first brand)
+- No horizontal scroll from 320px to 1920px; single dark cinematic theme (no light mode in v1)
+- All 12 locales build; Arabic renders right-to-left with mirrored layout; `hreflang` alternates on every page
 - Every page has a unique title, meta description and Open Graph image; sitemap.xml + robots.txt
 
 ## Proposed site map (v1)
@@ -19,12 +20,21 @@ that into one measurable action: **join the waitlist / download the app** (decid
 | --- | --- |
 | `/` Home (landing) | Hook → what Zippo is → show previews → how it works → social proof → CTA |
 | `/shows` | Teaser catalog: genre rows of vertical posters (placeholder art until real titles exist) |
-| `/creators` | Pitch to writers / studios / actors: why publish on Zippo, how revenue works, contact form |
-| `/about` | Mission, story, team (optional), press kit link |
+| `/genres` | Browse by mood: Romance, Revenge, CEO, Thriller, Fantasy, Werewolf |
+| `/how-it-works` | Free episodes, coins / subscription, devices |
+| `/coming-soon` | Launch countdown + first slate of shows; drives waitlist signups |
+| `/about` | Mission, story |
 | `/faq` | Pricing, episodes, devices, coins/subscription questions |
 | `/contact` | Support, partnerships, press |
+| `/press` | Press kit: logos, screenshots, fact sheet, media contact (footer link) |
+| `/creators` | "Work with us": short pitch-a-show page for studios/writers, footer link only; main nav stays viewer-only |
 | `/privacy`, `/terms` | Legal placeholders (real text supplied by you/legal) |
 | `404` | Branded, links back to home |
+
+Main nav: Home · Shows · Genres · How it works · Coming soon · FAQ · [Join waitlist]
+Footer: About · Contact · Press · Work with us · Privacy · Terms · language switcher
+
+Every page exists in each locale at `/{lang}/…`; English is also served at `/`.
 
 Home page sections, in order:
 1. **Hero**: headline + subline, primary CTA, phone mockup playing a looping vertical trailer
@@ -84,6 +94,16 @@ Verified when: home page passes the success criteria above on Lighthouse mobile.
 #### Step 3.2: `/creators` + contact form (Size: S) — Blocked by: 2.3
 #### Step 3.3: `/about`, `/faq` (FAQ schema markup), `/contact`, legal, 404 (Size: M) — Blocked by: 1.2
 
+#### Step 3.4: `/genres`, `/how-it-works`, `/coming-soon`, `/press` (Size: M) — Blocked by: 1.2
+
+### Phase 3b: Internationalization
+#### Step 3b.1: i18n routing + string dictionaries + language switcher + RTL support (Size: M)
+- Acceptance criteria: English copy extracted to `src/i18n/en.json`; switcher keeps the current page; `dir="rtl"` for Arabic
+- Blocked by: 2.2 (do the routing early so pages are built locale-aware from the start)
+#### Step 3b.2: Machine-translate the 11 other locales, each file marked `"_review": "needs native review"` (Size: M)
+- Verification: build check that every locale has every key (missing key fails the build)
+- Blocked by: Phase 3 copy final
+
 ### Phase 4: SEO, analytics, polish
 #### Step 4.1: OG images, sitemap, robots, JSON-LD (Organization, MobileApplication, FAQPage) (Size: S)
 #### Step 4.2: Analytics + CTA click events (Size: XS)
@@ -96,19 +116,22 @@ Blocked by: Phases 2–3
 - Blocked by: 4.3, and **you** connecting the host account + domain DNS (third-party action, confirmed before measuring)
 
 ## Decision log
-Gate 1 answered 2026-11-03.
+Gate 1 and gate 2 answered 2026-11-03.
 
 | Decision | Chosen option | Why |
 | --- | --- | --- |
 | Stage / primary CTA | Pre-launch → "Join the waitlist" | User: Zippo is pre-launch |
-| Audience | Viewers only | User. Open in gate 2: how `/creators` fits a viewers-only site |
+| Audience | Viewers only | User. `/creators` kept as a footer-only "Work with us" page |
 | Framework | Astro 5 + Tailwind CSS 4 | User-confirmed. Static output, near-zero JS, content collections |
 | Rendering | Fully static (SSG) | Marketing site, no per-user data |
 | Content source | Local JSON/Markdown in repo | No CMS in v1 |
 | Package manager | npm | Already installed |
-| Brand colors | From the user's palette | Palette image not yet received; gate 2 |
-| Fonts | A stylish display face + clean body face | User asked for "stylish"; pairing proposed in gate 2 |
-| Pages | Home, Shows, Creators, About, FAQ, Contact, Legal + 4 more | User; the 4 extra pages are chosen in gate 2 |
+| Brand colors | User palette: `#021024` (page bg), `#052659` (surfaces), `#5483B3` (borders/muted), `#7DA0CA` (secondary text), `#C1E8FF` (primary text, CTA, glow) | User-supplied. CTA = `#C1E8FF` fill on `#021024` text. Contrast on `#021024`: `#7DA0CA` ≈ 7:1, `#5483B3` ≈ 4.8:1 (AA, so it is fine for body text but used mainly for decoration) |
+| Theme | Dark only | The palette is a deep-navy-to-ice-blue ramp built for a dark cinematic look |
+| Fonts | Playfair Display (headlines) + Inter (body), Noto Sans families for non-Latin scripts | User accepted the recommendation; self-hosted via Fontsource |
+| Pages | Home, Shows, Genres, How it works, Coming soon, About, FAQ, Contact, Press, Work with us (`/creators`), Privacy, Terms, 404 | User accepted the 4 recommended extras |
+| Locales | en, hi, es, pt-BR, id, th, vi, fil, ja, ko, zh-Hans, ar (RTL) | User accepted. Non-English copy machine-translated and flagged for native review |
+| Domain | `zippo.com`, set via one `SITE_URL` config value | User-supplied; connected in Vercel by the user at deploy |
 | Forms | Web3Forms (Formspree as fallback) | User allowed either; Web3Forms needs only an access key, no dashboard setup |
 | Languages | Multi-language (i18n routing `/{lang}/…`) | User: "all languages"; the exact locale list is set in gate 2 |
 | Hosting | Vercel + user's existing domain | User |
@@ -119,7 +142,8 @@ Gate 1 answered 2026-11-03.
 ## Not yet specified
 - Phase 2: real trailer footage, show titles, posters — placeholders until you supply them
 - Phase 3: legal page text — must come from you
-- Phase 5: domain name and DNS access
+- Phase 5: user supplies a Web3Forms access key and connects `zippo.com` in Vercel (third-party actions; build pauses here and confirms both are done before measuring the live site)
+- Risk: "Zippo" is a well-known existing trademark (Zippo lighters, which uses zippo.com). User confirmed ownership; domain lives in one config value so it is a one-line change if needed
 
 ## Always / Never
 - Always: mobile-first, dark-first cinematic look, accessible, fast, real numbers only in social proof
@@ -132,5 +156,6 @@ Gate 1 answered 2026-11-03.
 | 1 Design system | not started |
 | 2 Home page | not started |
 | 3 Secondary pages | not started |
+| 3b i18n | not started |
 | 4 SEO/analytics | not started |
 | 5 Deploy | not started |
