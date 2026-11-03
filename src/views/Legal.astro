@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { getDict, getLocale, fmt } from '../i18n';
+import { EMAILS } from '../config';
+
+interface Props {
+  lang: string;
+  page: 'privacy' | 'terms';
+}
+const { lang, page } = Astro.props;
+const t = getDict(lang).legal;
+const isPrivacy = page === 'privacy';
+const sections = isPrivacy ? t.privacy : t.terms;
+const updated = new Intl.DateTimeFormat(getLocale(lang).hreflang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-03T00:00:00Z'));
+---
+
+<Base
+  lang={lang}
+  page={page}
+  title={isPrivacy ? t.privacyTitle : t.termsTitle}
+  description={isPrivacy ? t.privacyDescription : t.termsDescription}
+>
+  <PageHeader heading={isPrivacy ? t.privacyTitle : t.termsTitle} subtitle={fmt(t.updated, { date: updated })} />
+
+  <section class="container-x max-w-3xl">
+    <p class="rounded-2xl border border-ice/40 bg-navy/60 p-4 text-sm text-ice">{t.notice}</p>
+    <div class="mt-10 space-y-8">
+      {
+        sections.map((s) => (
+          <div>
+            <h2 class="text-xl font-semibold">{s.title}</h2>
+            <p class="mt-2 text-mist">{s.body}</p>
+          </div>
+        ))
+      }
+      <a href={`mailto:${EMAILS.hello}`} class="inline-block font-semibold text-ice underline underline-offset-4" dir="ltr">{EMAILS.hello}</a>
+    </div>
+  </section>
+</Base>

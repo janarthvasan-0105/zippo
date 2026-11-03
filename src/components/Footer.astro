@@ -1,0 +1,65 @@
+---
+import Logo from './Logo.astro';
+import LangSwitch from './LangSwitch.astro';
+import { getDict, href, fmt } from '../i18n';
+import type { PageKey } from '../i18n/routes';
+import { SOCIALS } from '../config';
+
+interface Props {
+  lang: string;
+  page: PageKey;
+}
+const { lang, page } = Astro.props;
+const t = getDict(lang);
+
+const columns: { title: string; links: PageKey[] }[] = [
+  { title: t.footer.explore, links: ['shows', 'genres', 'howItWorks', 'comingSoon', 'faq'] },
+  { title: t.footer.company, links: ['about', 'contact', 'press', 'creators'] },
+  { title: t.footer.legal, links: ['privacy', 'terms'] },
+];
+---
+
+<footer class="mt-24 border-t border-steel/15 bg-ink">
+  <div class="container-x grid gap-10 py-14 md:grid-cols-[1.4fr_repeat(3,1fr)]">
+    <div class="space-y-4">
+      <Logo />
+      <p class="max-w-xs text-mist">{t.footer.tagline}</p>
+      <div>
+        <p class="eyebrow mb-3">{t.footer.follow}</p>
+        <ul class="flex flex-wrap gap-2">
+          {
+            SOCIALS.map((s) => (
+              <li>
+                <a href={s.url} rel="noopener" target="_blank" class="rounded-full border border-steel/40 px-3 py-1.5 text-sm text-mist hover:border-ice hover:text-ice">
+                  {s.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    {
+      columns.map((c) => (
+        <div>
+          <p class="eyebrow mb-4">{c.title}</p>
+          <ul class="space-y-2">
+            {c.links.map((k) => (
+              <li>
+                <a href={href(lang, k)} class="text-mist transition hover:text-ice">
+                  {t.nav[k]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+  <div class="border-t border-steel/10">
+    <div class="container-x flex flex-col items-start justify-between gap-4 py-6 text-sm text-mist sm:flex-row sm:items-center">
+      <p>{fmt(t.footer.rights, { year: new Date().getFullYear() })} · {t.footer.photos}</p>
+      <LangSwitch lang={lang} page={page} up />
+    </div>
+  </div>
+</footer>

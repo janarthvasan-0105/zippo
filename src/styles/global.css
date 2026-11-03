@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/playfair-display/wght-italic.css";
+
+/* Brand palette (user-supplied): deep navy to ice blue. */
+@theme {
+  --color-ink: #021024;
+  --color-navy: #052659;
+  --color-steel: #5483b3;
+  --color-mist: #7da0ca;
+  --color-ice: #c1e8ff;
+
+  --font-display: "Playfair Display Variable", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+
+/* Playfair has no glyphs for these scripts; use the system sans for headings instead. */
+html:is(:lang(hi), :lang(th), :lang(ja), :lang(ko), :lang(zh-Hans), :lang(ar)) {
+  --font-display: var(--font-sans);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ink text-ice font-sans antialiased;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-ice);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ice);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 sm:text-base;
+  }
+  .btn-primary {
+    @apply bg-ice text-ink hover:bg-white;
+    box-shadow: 0 0 40px -10px rgb(193 232 255 / 0.7);
+  }
+  .btn-ghost {
+    @apply border border-steel/60 text-ice hover:border-ice hover:bg-white/5;
+  }
+  .card {
+    @apply rounded-3xl border border-steel/20 bg-navy/40;
+  }
+  .field {
+    @apply w-full rounded-2xl border border-steel/40 bg-ink/60 px-4 py-3 text-ice placeholder:text-mist/60 focus:border-ice focus:outline-none;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.2em] text-mist uppercase;
+  }
+  .glow {
+    background:
+      radial-gradient(40rem 30rem at 70% 10%, rgb(84 131 179 / 0.35), transparent 60%),
+      radial-gradient(30rem 25rem at 10% 60%, rgb(5 38 89 / 0.9), transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

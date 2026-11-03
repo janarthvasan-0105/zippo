@@ -1,0 +1,107 @@
+---
+// Hero visual: a phone playing a looping, silent "episode" built from stills (crossfade + slow zoom + captions).
+// Swap for a real vertical trailer (<video muted loop playsinline>) once footage exists.
+import { Image } from 'astro:assets';
+import { photo } from '../data/shows';
+import { getDict, fmt } from '../i18n';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang);
+
+const slides = [
+  { slug: 'midnight-contract', title: 'Midnight Contract', caption: t.home.phone.caption1, ep: 1 },
+  { slug: 'forgotten-heiress', title: 'Return of the Forgotten Heiress', caption: t.home.phone.caption2, ep: 12 },
+  { slug: 'ashes-wear-white', title: 'Ashes Wear White', caption: t.home.phone.caption3, ep: 7 },
+];
+---
+
+<div class="phone relative mx-auto w-[min(78vw,300px)]" aria-hidden="true">
+  <div class="absolute -inset-10 rounded-full bg-steel/30 blur-3xl"></div>
+  <div class="relative aspect-[9/19] rounded-[2.8rem] border border-steel/50 bg-ink p-2.5 shadow-[0_40px_120px_-30px_rgb(84_131_179/0.8)]">
+    <div class="relative size-full overflow-hidden rounded-[2.2rem] bg-navy">
+      {
+        slides.map((s, i) => (
+          <div class="slide absolute inset-0" style={`animation-delay:${i * 4}s`}>
+            <Image
+              src={photo(s.slug)}
+              alt=""
+              widths={[300, 600]}
+              sizes="300px"
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : undefined}
+              class="zoom absolute inset-0 size-full object-cover saturate-[.75]"
+              style={`animation-delay:${i * 4}s`}
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-ink/40" />
+            <div class="absolute inset-x-0 bottom-0 p-5 pe-14">
+              <p class="text-[11px] font-semibold text-mist">{fmt(t.home.phone.episode, { n: s.ep })}</p>
+              <p class="mt-1 text-sm font-bold text-ice" style="font-family: 'Playfair Display Variable', Georgia, serif" dir="ltr">
+                {s.title}
+              </p>
+              <p class="mt-3 text-[13px] leading-snug text-ice/90">{s.caption}</p>
+            </div>
+          </div>
+        ))
+      }
+
+      <div class="absolute inset-x-0 top-0 flex items-center justify-between px-5 pt-4 text-[11px] text-ice/80">
+        <span>9:41</span>
+        <span class="h-5 w-20 rounded-full bg-ink"></span>
+        <span>5G</span>
+      </div>
+
+      <div class="absolute end-3 bottom-24 flex flex-col items-center gap-4 text-ice">
+        <svg viewBox="0 0 24 24" class="size-7" fill="currentColor"
+          ><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3.3 5 6.8 5c2 0 3.4 1.1 4.2 2.3h2C13.8 6.1 15.2 5 17.2 5c3.5 0 5.6 3.6 4.3 6.8C19.5 16.4 12 21 12 21z"
+          ></path></svg
+        >
+        <svg viewBox="0 0 24 24" class="size-7" fill="none" stroke="currentColor" stroke-width="2"
+          ><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12z"></path></svg
+        >
+        <svg viewBox="0 0 24 24" class="size-7" fill="none" stroke="currentColor" stroke-width="2"
+          ><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"></path></svg
+        >
+      </div>
+
+      <div class="absolute inset-x-4 bottom-3 h-1 overflow-hidden rounded-full bg-ice/20">
+        <div class="progress h-full rounded-full bg-ice"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .slide {
+    opacity: 0;
+    animation: show 12s infinite;
+  }
+  .slide:first-child {
+    opacity: 1;
+  }
+  .zoom {
+    animation: zoom 12s infinite;
+  }
+  .progress {
+    animation: progress 4s linear infinite;
+    transform-origin: left;
+  }
+  :global([dir='rtl']) .progress {
+    transform-origin: right;
+  }
+  @keyframes show {
+    0%, 30% { opacity: 1; }
+    34%, 96% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+  }
+  @keyframes progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+</style>

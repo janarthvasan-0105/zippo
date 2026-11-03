@@ -1,0 +1,288 @@
+{
+  "_review": "source",
+  "meta": {
+    "siteName": "Zippo",
+    "tagline": "Big drama. Tiny episodes.",
+    "description": "Zippo is the new home of mini dramas: binge-worthy vertical series told in one-minute episodes. Join the waitlist for early access."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "home": "Home",
+    "shows": "Shows",
+    "genres": "Genres",
+    "howItWorks": "How it works",
+    "comingSoon": "Coming soon",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "press": "Press",
+    "creators": "Work with us",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "joinWaitlist": "Join waitlist",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "sample": {
+    "badge": "Sample",
+    "note": "Titles and artwork shown are samples for preview. The launch slate will be announced soon."
+  },
+  "waitlist": {
+    "title": "Be first in line",
+    "subtitle": "Get early access, free coins at launch, and a first look at every new show.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Join the waitlist",
+    "sending": "Joining…",
+    "success": "You're on the list! Watch your inbox for early access.",
+    "error": "Something went wrong. Please try again.",
+    "fine": "No spam. Unsubscribe anytime."
+  },
+  "home": {
+    "title": "Zippo: Big drama. Tiny episodes.",
+    "description": "Binge-worthy vertical series in one-minute episodes. Romance, revenge, billionaires and werewolves, made for your phone. Join the Zippo waitlist.",
+    "hero": {
+      "eyebrow": "Launching soon",
+      "title1": "Big drama.",
+      "title2": "Tiny episodes.",
+      "subtitle": "Binge-worthy vertical series told in one-minute episodes. Every episode ends on a cliffhanger, so one more is never just one more.",
+      "secondary": "Explore the shows"
+    },
+    "phone": {
+      "episode": "Episode {n}",
+      "caption1": "“You signed the contract. You belong to me now.”",
+      "caption2": "“They buried me once. They won't get a second chance.”",
+      "caption3": "“Smile for the cameras, darling. Tonight we end them.”"
+    },
+    "what": {
+      "title": "What's a mini drama?",
+      "subtitle": "A full-length story cut into bite-size episodes, shot vertically for the screen in your hand.",
+      "items": [
+        { "title": "One-minute episodes", "body": "Watch a whole episode while your coffee brews. Finish a series on your commute." },
+        { "title": "A cliffhanger every time", "body": "Secret heirs, fake marriages and shocking betrayals. Every minute ends on a twist." },
+        { "title": "Made for your phone", "body": "Shot vertically, full screen, one thumb. No turning your phone, ever." }
+      ]
+    },
+    "trending": {
+      "title": "A first look at the slate",
+      "subtitle": "A taste of the stories we're making. Full lineup announced at launch.",
+      "viewAll": "View all shows"
+    },
+    "how": {
+      "title": "How Zippo works",
+      "steps": [
+        { "title": "Pick a story", "body": "Browse by mood: romance, revenge, thrillers, fantasy and more." },
+        { "title": "Watch free episodes", "body": "The first episodes of every show are free, no card needed." },
+        { "title": "Unlock the rest", "body": "Use coins for single episodes or go unlimited with a membership." }
+      ],
+      "more": "Learn more"
+    },
+    "why": {
+      "title": "Built for the way you watch",
+      "items": [
+        { "title": "New episodes daily", "body": "Fresh drops every day, so there's always a next episode." },
+        { "title": "Your language", "body": "Subtitles and dubs in 12 languages at launch." },
+        { "title": "Free to start", "body": "Start watching without paying a thing." },
+        { "title": "Picks for you", "body": "The more you watch, the better your feed gets." }
+      ]
+    },
+    "creatorsTeaser": {
+      "title": "Have a story that can't wait?",
+      "body": "We're partnering with studios, writers and directors for our launch slate.",
+      "cta": "Work with us"
+    }
+  },
+  "shows": {
+    "title": "Shows",
+    "description": "A first look at the mini dramas coming to Zippo: romance, revenge, CEO stories, thrillers, fantasy and werewolf sagas.",
+    "heading": "The slate",
+    "subtitle": "Swipe-worthy stories across every mood. Here's a first look at what's coming.",
+    "all": "All",
+    "episodes": "{n} episodes",
+    "atLaunch": "At launch",
+    "premieres": "Premieres {date}"
+  },
+  "genres": {
+    "title": "Genres",
+    "description": "Browse Zippo mini dramas by mood: romance, revenge, CEO, thriller, fantasy and werewolf.",
+    "heading": "Find your kind of drama",
+    "subtitle": "Whatever your mood, there's a story waiting.",
+    "count": "{n} shows",
+    "browse": "Browse {genre}",
+    "names": {
+      "romance": "Romance",
+      "revenge": "Revenge",
+      "ceo": "CEO",
+      "thriller": "Thriller",
+      "fantasy": "Fantasy",
+      "werewolf": "Werewolf"
+    },
+    "blurbs": {
+      "romance": "Slow burns, second chances and love that breaks every rule.",
+      "revenge": "Underestimated, betrayed and back to take everything.",
+      "ceo": "Billionaires, contracts and boardroom secrets.",
+      "thriller": "Locked doors, missing hours and nobody to trust.",
+      "fantasy": "Hidden kingdoms, ancient curses and forbidden power.",
+      "werewolf": "Fated mates, rival packs and a moon that changes everything."
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "description": "How Zippo works: free episodes, coins, membership and the devices you can watch on.",
+    "heading": "How Zippo works",
+    "subtitle": "Simple to start, impossible to stop.",
+    "steps": [
+      { "title": "Download the app", "body": "Get Zippo free on iPhone and Android at launch." },
+      { "title": "Pick a story", "body": "Browse by genre or let your feed find your next obsession." },
+      { "title": "Watch free episodes", "body": "The opening episodes of every series are always free." },
+      { "title": "Keep going", "body": "Unlock more with coins, or go unlimited with a membership." }
+    ],
+    "plansTitle": "Ways to watch",
+    "plans": [
+      { "name": "Free", "body": "The first episodes of every show, plus daily free unlocks." },
+      { "name": "Coins", "body": "Top up and unlock exactly the episodes you want. Coins never expire." },
+      { "name": "Membership", "body": "Unlimited episodes, no ads and early access to new releases." }
+    ],
+    "plansNote": "Pricing will be announced at launch.",
+    "devicesTitle": "Where to watch",
+    "devicesBody": "Zippo is built for phones first: iPhone and Android at launch, with web and TV to follow."
+  },
+  "comingSoon": {
+    "title": "Coming soon",
+    "description": "Zippo is launching soon. See the countdown, the first shows on the slate, and join the waitlist for early access.",
+    "heading": "The countdown is on",
+    "subtitle": "Zippo opens its doors soon. Waitlist members get in first.",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "dateNote": "Target launch date. Subject to change.",
+    "slateTitle": "Premiering first",
+    "slateSubtitle": "The first originals in production for launch."
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Answers to common questions about Zippo: pricing, episodes, devices, languages and launch.",
+    "heading": "Frequently asked questions",
+    "subtitle": "Everything you need to know before launch.",
+    "items": [
+      { "q": "What is Zippo?", "a": "Zippo is a streaming app for mini dramas: full stories told in short, vertical episodes of about one minute each." },
+      { "q": "When does Zippo launch?", "a": "Soon! Join the waitlist and you'll be the first to know, with early access before the public launch." },
+      { "q": "Is Zippo free?", "a": "Zippo is free to download, and the first episodes of every show are free. You can unlock more with coins or a membership." },
+      { "q": "How long is an episode?", "a": "Most episodes run one to three minutes. A full series usually has 50 to 100 episodes." },
+      { "q": "Which devices can I watch on?", "a": "iPhone and Android at launch. Web and TV apps will follow." },
+      { "q": "Which languages are supported?", "a": "Subtitles and dubbed audio in 12 languages at launch, with more on the way." },
+      { "q": "What do I get for joining the waitlist?", "a": "Early access before public launch, free coins on your first day, and first looks at new shows." },
+      { "q": "Can I download episodes to watch offline?", "a": "Offline viewing is planned for members shortly after launch." }
+    ],
+    "more": "Still have questions?",
+    "contact": "Contact us"
+  },
+  "about": {
+    "title": "About",
+    "description": "Zippo is building the home of mini dramas: big stories, told one minute at a time.",
+    "heading": "Big stories, one minute at a time",
+    "lead": "We believe the best stories don't need two hours. They need a hook, a heart and a cliffhanger that won't let go.",
+    "sections": [
+      { "title": "Why we're building Zippo", "body": "Hundreds of millions of people already watch drama on their phones in short bursts. Zippo is built for that from the ground up: vertical, fast and impossible to put down." },
+      { "title": "What we make", "body": "Original series across romance, revenge, thriller, fantasy and more, produced with studios and storytellers around the world." },
+      { "title": "Where we're going", "body": "One app, every language, stories from everywhere. We're starting with a slate of originals and growing from there." }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with the Zippo team for support, partnerships or press.",
+    "heading": "Get in touch",
+    "subtitle": "Questions, ideas or partnerships, we read every message.",
+    "name": "Your name",
+    "email": "Email address",
+    "topic": "Topic",
+    "topics": {
+      "general": "General question",
+      "support": "Support",
+      "partnership": "Partnership",
+      "press": "Press"
+    },
+    "message": "Message",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thanks! We'll get back to you soon.",
+    "error": "Something went wrong. Please try again or email us directly.",
+    "direct": "Prefer email?"
+  },
+  "press": {
+    "title": "Press",
+    "description": "Zippo press kit: fact sheet, brand assets and media contact.",
+    "heading": "Press & media",
+    "subtitle": "Everything you need to write about Zippo.",
+    "factsTitle": "Fact sheet",
+    "facts": [
+      { "label": "What", "value": "A streaming app for mini dramas: vertical series in one-minute episodes" },
+      { "label": "Launch", "value": "Coming soon on iPhone and Android" },
+      { "label": "Genres", "value": "Romance, revenge, CEO, thriller, fantasy, werewolf" },
+      { "label": "Languages", "value": "12 at launch" }
+    ],
+    "kitTitle": "Brand assets",
+    "kitBody": "Our logo and app icon. Please don't alter the colors or proportions.",
+    "logo": "Download logo (SVG)",
+    "icon": "Download icon (SVG)",
+    "contactTitle": "Media contact",
+    "contactBody": "For interviews, screeners and launch news, email our press team."
+  },
+  "creators": {
+    "title": "Work with us",
+    "description": "Studios, writers and directors: pitch your mini drama to Zippo.",
+    "heading": "Bring your story to Zippo",
+    "subtitle": "We're partnering with studios, writers and directors on our launch slate.",
+    "points": [
+      { "title": "Studios", "body": "Co-produce or license finished series for a global, mobile-first audience." },
+      { "title": "Writers", "body": "Pitch a hook, a world and a cliffhanger. We develop with you." },
+      { "title": "Directors & talent", "body": "Join productions shooting for vertical, episodic storytelling." }
+    ],
+    "formTitle": "Pitch us",
+    "name": "Your name",
+    "email": "Email address",
+    "company": "Studio or company (optional)",
+    "link": "Link to your work (optional)",
+    "pitch": "Your pitch in a few lines",
+    "submit": "Send pitch",
+    "sending": "Sending…",
+    "success": "Thanks! Our content team will review your pitch.",
+    "error": "Something went wrong. Please try again."
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms of Service",
+    "privacyDescription": "How Zippo collects, uses and protects your information.",
+    "termsDescription": "The terms that apply when you use Zippo.",
+    "notice": "Placeholder: this page will be replaced with the final legal text before launch.",
+    "updated": "Last updated: {date}",
+    "privacy": [
+      { "title": "What we collect", "body": "When you join the waitlist we collect your email address and preferred language. When you contact us we collect what you send." },
+      { "title": "How we use it", "body": "To send you launch news and early access, and to answer your messages. We never sell your personal information." },
+      { "title": "Your choices", "body": "You can unsubscribe at any time using the link in our emails, or ask us to delete your data." },
+      { "title": "Contact", "body": "Questions about privacy? Email us and we'll help." }
+    ],
+    "terms": [
+      { "title": "Using this site", "body": "This website provides information about Zippo before launch. Content may change at any time." },
+      { "title": "Content", "body": "Show titles and artwork on this site are previews and may change. All trademarks belong to their owners." },
+      { "title": "The app", "body": "Separate terms will apply to the Zippo app and will be published at launch." },
+      { "title": "Contact", "body": "Questions about these terms? Email us." }
+    ]
+  },
+  "footer": {
+    "tagline": "Big drama. Tiny episodes.",
+    "explore": "Explore",
+    "company": "Company",
+    "legal": "Legal",
+    "follow": "Follow us",
+    "rights": "© {year} Zippo. All rights reserved.",
+    "photos": "Photos: Unsplash"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "heading": "This episode doesn't exist",
+    "body": "The page you're looking for was moved or never aired.",
+    "cta": "Back to home"
+  }
+}

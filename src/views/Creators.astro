@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Web3Form from '../components/Web3Form.astro';
+import { getDict } from '../i18n';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang).creators;
+---
+
+<Base lang={lang} page="creators" title={t.title} description={t.description}>
+  <PageHeader heading={t.heading} subtitle={t.subtitle} />
+
+  <section class="container-x grid gap-4 md:grid-cols-3">
+    {
+      t.points.map((p) => (
+        <div class="card p-7">
+          <h2 class="font-display text-2xl font-bold">{p.title}</h2>
+          <p class="mt-2 text-mist">{p.body}</p>
+        </div>
+      ))
+    }
+  </section>
+
+  <section class="container-x mt-16 max-w-3xl">
+    <h2 class="font-display mb-6 text-3xl font-bold">{t.formTitle}</h2>
+    <Web3Form kind="pitch" lang={lang} sending={t.sending} success={t.success} error={t.error} class="card space-y-5 p-6 sm:p-10">
+      <div class="grid gap-5 sm:grid-cols-2">
+        <label class="block">
+          <span class="mb-2 block text-sm text-mist">{t.name}</span>
+          <input name="name" required autocomplete="name" class="field" />
+        </label>
+        <label class="block">
+          <span class="mb-2 block text-sm text-mist">{t.email}</span>
+          <input name="email" type="email" required autocomplete="email" class="field" />
+        </label>
+        <label class="block">
+          <span class="mb-2 block text-sm text-mist">{t.company}</span>
+          <input name="company" autocomplete="organization" class="field" />
+        </label>
+        <label class="block">
+          <span class="mb-2 block text-sm text-mist">{t.link}</span>
+          <input name="link" type="url" class="field" dir="ltr" />
+        </label>
+      </div>
+      <label class="block">
+        <span class="mb-2 block text-sm text-mist">{t.pitch}</span>
+        <textarea name="pitch" required rows="6" class="field"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">{t.submit}</button>
+    </Web3Form>
+  </section>
+</Base>

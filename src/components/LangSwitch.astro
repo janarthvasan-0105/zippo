@@ -1,0 +1,50 @@
+---
+import { locales, getDict, getLocale, href } from '../i18n';
+import type { PageKey } from '../i18n/routes';
+
+interface Props {
+  lang: string;
+  page: PageKey;
+  /** Opens upward when placed at the bottom of the page. */
+  up?: boolean;
+}
+const { lang, page, up = false } = Astro.props;
+const t = getDict(lang);
+---
+
+<details class="group relative">
+  <summary
+    class="flex cursor-pointer list-none items-center gap-2 rounded-full border border-steel/40 px-3 py-2 text-sm text-mist transition hover:border-ice hover:text-ice"
+    aria-label={t.nav.language}
+  >
+    <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"
+      ><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"></path></svg
+    >
+    <span>{getLocale(lang).name}</span>
+  </summary>
+  <ul
+    class:list={[
+      'absolute end-0 z-50 max-h-80 w-56 overflow-auto rounded-2xl border border-steel/30 bg-ink/95 p-2 shadow-2xl backdrop-blur',
+      up ? 'bottom-full mb-2' : 'top-full mt-2',
+    ]}
+  >
+    {
+      locales.map((l) => (
+        <li>
+          <a
+            href={href(l.code, page)}
+            hreflang={l.hreflang}
+            lang={l.hreflang}
+            aria-current={l.code === lang ? 'true' : undefined}
+            class:list={[
+              'block rounded-xl px-3 py-2 text-sm transition hover:bg-navy',
+              l.code === lang ? 'bg-navy text-ice' : 'text-mist',
+            ]}
+          >
+            {l.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
