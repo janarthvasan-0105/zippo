@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Poster from '../components/Poster.astro';
+import WaitlistBand from '../components/WaitlistBand.astro';
+import { getDict, getLocale, fmt } from '../i18n';
+import { shows, genres } from '../data/shows';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang);
+const month = new Intl.DateTimeFormat(getLocale(lang).hreflang, { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const releaseLabel = (r: string) => (r === 'launch' ? t.shows.atLaunch : fmt(t.shows.premieres, { date: month.format(new Date(`${r}-01T00:00:00Z`)) }));
+---
+
+<Base lang={lang} page="shows" title={t.shows.title} description={t.shows.description}>
+  <PageHeader heading={t.shows.heading} subtitle={t.shows.subtitle} />
+
+  <section class="container-x">
+    <div class="flex flex-wrap gap-2" role="group" aria-label={t.nav.genres} id="genre-filter">
+      <button type="button" data-genre="all" aria-pressed="true" class="chip">{t.shows.all}</button>
+      {genres.map((g) => <button type="button" data-genre={g} aria-pressed="false" class="chip">{t.genres.names[g]}</button>)}
+    </div>
+
+    <ul class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      {
+        shows.map((show, i) => (
+          <li data-show-genre={show.genre}>
+            <Poster show={show} lang={lang} level={2} eager={i < 4}sizes="(min-width: 1024px) 270px, (min-width: 640px) 30vw, 45vw" />
+            <p class:list={['mt-2 text-xs', show.release === 'launch' ? 'text-mist' : 'font-semibold text-ice']}>{releaseLabel(show.release)}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-6 text-sm text-mist">{t.sample.note}</p>
+  </section>
+
+  <WaitlistBand lang={lang} />
+</Base>
+
+<style>
+  .chip {
+    border-radius: 9999px;
+    border: 1px solid rgb(84 131 179 / 0.5);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: var(--color-mist);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .chip:hover {
+    color: var(--color-ice);
+    border-color: var(--color-ice);
+  }
+  .chip[aria-pressed='true'] {
+    background: var(--color-ice);
+    border-color: var(--color-ice);
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+</style>
+
+<script>
+  const filter = document.getElementById('genre-filter');
+  if (filter) {
+    const chips = [...filter.querySelectorAll<HTMLButtonElement>('[data-genre]')];
+    const items = [...document.querySelectorAll<HTMLElement>('[data-show-genre]')];
+    const select = (genre: string) => {
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.genre === genre)));
+      items.forEach((el) => (el.hidden = genre !== 'all' && el.dataset.showGenre !== genre));
+    };
+    chips.forEach((c) => c.addEventListener('click', () => select(c.dataset.genre!)));
+    const initial = new URLSearchParams(location.search).get('genre');
+    if (initial && chips.some((c) => c.dataset.genre === initial)) select(initial);
+  }
+</script>

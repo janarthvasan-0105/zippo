@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets';
+import { photo, type Show } from '../data/shows';
+import { getDict, fmt } from '../i18n';
+
+interface Props {
+  show: Show;
+  lang: string;
+  /** Image `sizes` hint for the layout the poster sits in. */
+  sizes?: string;
+  eager?: boolean;
+  /** Heading level of the title, so it follows the page's outline. */
+  level?: 2 | 3;
+}
+const { show, lang, sizes = '(min-width: 1024px) 240px, 45vw', eager = false, level = 3 } = Astro.props;
+const t = getDict(lang);
+const Heading = `h${level}`;
+---
+
+<article class="group relative aspect-[2/3] overflow-hidden rounded-3xl border border-steel/20 bg-navy">
+  <Image
+    src={photo(show.slug)}
+    alt=""
+    widths={[240, 360, 480, 720]}
+    sizes={sizes}
+    loading={eager ? 'eager' : 'lazy'}
+    class="absolute inset-0 size-full object-cover saturate-[.7] transition duration-700 group-hover:scale-105"
+  />
+  <div class="absolute inset-0 bg-navy/25 mix-blend-multiply" aria-hidden="true"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" aria-hidden="true"></div>
+
+  <span class="absolute start-3 top-3 rounded-full border border-ice/30 bg-ink/60 px-2.5 py-1 text-[10px] font-semibold tracking-wider text-ice uppercase backdrop-blur">
+    {t.sample.badge}
+  </span>
+
+  <div class="absolute inset-x-0 bottom-0 p-4">
+    <p class="eyebrow text-[10px]">{t.genres.names[show.genre]}</p>
+    <Heading class="mt-1 text-lg leading-snug font-bold text-ice" style="font-family: 'Playfair Display Variable', Georgia, serif" dir="ltr">{show.title}</Heading>
+    <p class="mt-1 text-xs text-mist">{fmt(t.shows.episodes, { n: show.episodes.toLocaleString(lang) })}</p>
+  </div>
+</article>

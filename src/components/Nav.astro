@@ -1,0 +1,87 @@
+---
+import Logo from './Logo.astro';
+import LangSwitch from './LangSwitch.astro';
+import { getDict, href } from '../i18n';
+import type { PageKey } from '../i18n/routes';
+
+interface Props {
+  lang: string;
+  page: PageKey;
+}
+const { lang, page } = Astro.props;
+const t = getDict(lang);
+
+const links: { key: PageKey; label: string }[] = [
+  { key: 'shows', label: t.nav.shows },
+  { key: 'genres', label: t.nav.genres },
+  { key: 'howItWorks', label: t.nav.howItWorks },
+  { key: 'comingSoon', label: t.nav.comingSoon },
+  { key: 'faq', label: t.nav.faq },
+];
+---
+
+<header class="sticky top-0 z-40 border-b border-steel/15 bg-ink/75 backdrop-blur-xl">
+  <nav class="container-x flex h-16 items-center justify-between gap-4">
+    <a href={href(lang)} aria-label="Zippo">
+      <Logo />
+    </a>
+
+    <ul class="hidden items-center gap-1 lg:flex">
+      {
+        links.map((l) => (
+          <li>
+            <a
+              href={href(lang, l.key)}
+              aria-current={l.key === page ? 'page' : undefined}
+              class:list={[
+                'rounded-full px-4 py-2 text-sm transition hover:text-ice',
+                l.key === page ? 'bg-navy/70 text-ice' : 'text-mist',
+              ]}
+            >
+              {l.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="flex items-center gap-2">
+      <div class="hidden sm:block"><LangSwitch lang={lang} page={page} /></div>
+      <a href={href(lang, 'home', '#waitlist')} class="btn btn-primary hidden px-5 py-2 sm:inline-flex" data-track="nav_waitlist">
+        {t.nav.joinWaitlist}
+      </a>
+
+      <details class="lg:hidden">
+        <summary
+          class="flex size-10 cursor-pointer list-none items-center justify-center rounded-full border border-steel/40 text-ice"
+          aria-label={t.nav.menu}
+        >
+          <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+            ><path d="M4 7h16M4 12h16M4 17h16"></path></svg
+          >
+        </summary>
+        <div class="absolute inset-x-0 top-16 border-b border-steel/20 bg-ink/95 backdrop-blur-xl">
+          <ul class="container-x flex flex-col gap-1 py-4">
+            {
+              links.map((l) => (
+                <li>
+                  <a
+                    href={href(lang, l.key)}
+                    aria-current={l.key === page ? 'page' : undefined}
+                    class="block rounded-2xl px-4 py-3 text-lg text-ice hover:bg-navy"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))
+            }
+            <li class="mt-2 flex flex-wrap items-center gap-3 px-4">
+              <a href={href(lang, 'home', '#waitlist')} class="btn btn-primary" data-track="nav_waitlist">{t.nav.joinWaitlist}</a>
+              <div class="sm:hidden"><LangSwitch lang={lang} page={page} /></div>
+            </li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </nav>
+</header>

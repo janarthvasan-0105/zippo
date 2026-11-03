@@ -1,0 +1,27 @@
+---
+import Web3Form from './Web3Form.astro';
+import { getDict } from '../i18n';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang).waitlist;
+---
+
+<Web3Form kind="waitlist" lang={lang} sending={t.sending} success={t.success} error={t.error} class="w-full max-w-lg">
+  <div class="flex flex-col gap-3 sm:flex-row">
+    <label class="sr-only" for={`email-${lang}`}>{t.emailLabel}</label>
+    <input
+      id={`email-${lang}`}
+      name="email"
+      type="email"
+      required
+      autocomplete="email"
+      placeholder={t.emailPlaceholder}
+      class="field flex-1 rounded-full"
+    />
+    <button type="submit" class="btn btn-primary shrink-0">{t.submit}</button>
+  </div>
+  <p class="mt-3 text-sm text-mist">{t.fine}</p>
+</Web3Form>

@@ -1,0 +1,287 @@
+{
+  "_review": "machine translation, needs native review",
+  "meta": {
+    "siteName": "Zippo",
+    "tagline": "Malaking drama. Maliliit na episode.",
+    "description": "Ang Zippo ang bagong tahanan ng mini drama: nakaka-adik na vertical series na ikinukuwento sa tig-iisang minutong episode. Sumali sa waitlist para sa maagang access."
+  },
+  "nav": {
+    "skip": "Lumaktaw sa nilalaman",
+    "home": "Home",
+    "shows": "Mga palabas",
+    "genres": "Mga genre",
+    "howItWorks": "Paano ito gumagana",
+    "comingSoon": "Malapit na",
+    "faq": "FAQ",
+    "about": "Tungkol sa amin",
+    "contact": "Makipag-ugnayan",
+    "press": "Press",
+    "creators": "Makipagtulungan sa amin",
+    "privacy": "Privacy",
+    "terms": "Mga tuntunin",
+    "joinWaitlist": "Sumali sa waitlist",
+    "menu": "Menu",
+    "language": "Wika"
+  },
+  "sample": {
+    "badge": "Sample",
+    "note": "Ang mga pamagat at larawang ipinapakita ay sample lamang para sa preview. Iaanunsyo na ang launch slate sa lalong madaling panahon."
+  },
+  "waitlist": {
+    "title": "Mauna sa pila",
+    "subtitle": "Makakuha ng maagang access, libreng coins sa launch, at unang silip sa bawat bagong palabas.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "ikaw@halimbawa.com",
+    "submit": "Sumali sa waitlist",
+    "sending": "Sumasali…",
+    "success": "Nasa listahan ka na! Abangan ang inbox mo para sa maagang access.",
+    "error": "May nangyaring mali. Pakisubukang muli.",
+    "fine": "Walang spam. Mag-unsubscribe anumang oras."
+  },
+  "home": {
+    "title": "Zippo: Malaking drama. Maliliit na episode.",
+    "description": "Nakaka-adik na vertical series sa tig-iisang minutong episode. Romance, paghihiganti, bilyonaryo at werewolf, ginawa para sa phone mo. Sumali sa waitlist ng Zippo.",
+    "hero": {
+      "eyebrow": "Ilulunsad na",
+      "title1": "Malaking drama.",
+      "title2": "Maliliit na episode.",
+      "subtitle": "Nakaka-adik na vertical series na ikinukuwento sa tig-iisang minutong episode. Bawat episode ay nagtatapos sa cliffhanger, kaya ang “isa pa” ay hindi kailanman isa lang.",
+      "secondary": "Tingnan ang mga palabas"
+    },
+    "phone": {
+      "episode": "Episode {n}",
+      "caption1": "“Pinirmahan mo ang kontrata. Akin ka na ngayon.”",
+      "caption2": "“Inilibing na nila ako minsan. Wala nang pangalawang pagkakataon.”",
+      "caption3": "“Ngumiti ka sa camera, mahal. Ngayong gabi, tatapusin natin sila.”"
+    },
+    "what": {
+      "title": "Ano ang mini drama?",
+      "subtitle": "Isang buong kuwento na hinati sa maiikling episode, kinunan nang patayo para sa screen na hawak mo.",
+      "items": [
+        { "title": "Isang minutong episode", "body": "Manood ng buong episode habang nagtitimpla ng kape. Tapusin ang isang serye sa biyahe." },
+        { "title": "Cliffhanger palagi", "body": "Lihim na tagapagmana, pekeng kasal at nakakagulat na pagtataksil. Bawat minuto ay may twist." },
+        { "title": "Ginawa para sa phone mo", "body": "Kinunan nang patayo, full screen, isang hinlalaki lang. Hindi mo na kailangang iikot ang phone." }
+      ]
+    },
+    "trending": {
+      "title": "Unang silip sa slate",
+      "subtitle": "Patikim sa mga kuwentong ginagawa namin. Iaanunsyo ang buong lineup sa launch.",
+      "viewAll": "Tingnan lahat ng palabas"
+    },
+    "how": {
+      "title": "Paano gumagana ang Zippo",
+      "steps": [
+        { "title": "Pumili ng kuwento", "body": "Mag-browse ayon sa mood: romance, paghihiganti, thriller, fantasy at iba pa." },
+        { "title": "Manood ng libreng episode", "body": "Libre ang mga unang episode ng bawat palabas, walang card na kailangan." },
+        { "title": "I-unlock ang iba pa", "body": "Gumamit ng coins para sa bawat episode o manood nang walang limitasyon gamit ang membership." }
+      ]
+    },
+    "why": {
+      "title": "Ginawa para sa paraan ng panonood mo",
+      "items": [
+        { "title": "Bagong episode araw-araw", "body": "May bagong labas araw-araw, kaya laging may susunod na episode." },
+        { "title": "Sa wika mo", "body": "Subtitle at dub sa 12 wika sa launch." },
+        { "title": "Libre para magsimula", "body": "Magsimulang manood nang walang binabayaran." },
+        { "title": "Mga pili para sa iyo", "body": "Habang mas marami kang pinapanood, mas gumaganda ang feed mo." }
+      ]
+    },
+    "creatorsTeaser": {
+      "title": "May kuwento ka bang hindi na makapaghintay?",
+      "body": "Nakikipagtulungan kami sa mga studio, manunulat at direktor para sa aming launch slate.",
+      "cta": "Makipagtulungan sa amin"
+    }
+  },
+  "shows": {
+    "title": "Mga palabas",
+    "description": "Unang silip sa mga mini drama na darating sa Zippo: romance, paghihiganti, kuwentong CEO, thriller, fantasy at werewolf.",
+    "heading": "Ang slate",
+    "subtitle": "Mga kuwentong sulit i-swipe para sa bawat mood. Narito ang unang silip sa mga darating.",
+    "all": "Lahat",
+    "episodes": "{n} episode",
+    "atLaunch": "Sa launch",
+    "premieres": "Premiere sa {date}"
+  },
+  "genres": {
+    "title": "Mga genre",
+    "description": "Mag-browse ng mga mini drama sa Zippo ayon sa mood: romance, paghihiganti, CEO, thriller, fantasy at werewolf.",
+    "heading": "Hanapin ang drama mo",
+    "subtitle": "Anuman ang mood mo, may kuwentong naghihintay.",
+    "count": "{n} palabas",
+    "browse": "Tingnan ang {genre}",
+    "names": {
+      "romance": "Romance",
+      "revenge": "Paghihiganti",
+      "ceo": "CEO",
+      "thriller": "Thriller",
+      "fantasy": "Fantasy",
+      "werewolf": "Werewolf"
+    },
+    "blurbs": {
+      "romance": "Mabagal na pag-ibig, pangalawang pagkakataon at pagmamahal na lumalabag sa lahat ng patakaran.",
+      "revenge": "Minaliit, pinagtaksilan at bumalik para bawiin ang lahat.",
+      "ceo": "Mga bilyonaryo, kontrata at lihim ng boardroom.",
+      "thriller": "Nakakandadong pinto, nawawalang oras at walang mapagkakatiwalaan.",
+      "fantasy": "Mga lihim na kaharian, sinaunang sumpa at ipinagbabawal na kapangyarihan.",
+      "werewolf": "Itinakdang kapareha, magkalabang pack at buwang nagbabago ng lahat."
+    }
+  },
+  "howItWorks": {
+    "title": "Paano ito gumagana",
+    "description": "Paano gumagana ang Zippo: libreng episode, coins, membership at mga device na mapapanooran mo.",
+    "heading": "Paano gumagana ang Zippo",
+    "subtitle": "Madaling simulan, imposibleng itigil.",
+    "steps": [
+      { "title": "I-download ang app", "body": "Kunin ang Zippo nang libre sa iPhone at Android sa launch." },
+      { "title": "Pumili ng kuwento", "body": "Mag-browse ayon sa genre o hayaang hanapin ng feed mo ang susunod mong kinahuhumalingan." },
+      { "title": "Manood ng libreng episode", "body": "Laging libre ang mga panimulang episode ng bawat serye." },
+      { "title": "Ituloy lang", "body": "Mag-unlock pa gamit ang coins, o manood nang walang limitasyon gamit ang membership." }
+    ],
+    "plansTitle": "Mga paraan ng panonood",
+    "plans": [
+      { "name": "Libre", "body": "Ang mga unang episode ng bawat palabas, kasama ang libreng unlock araw-araw." },
+      { "name": "Coins", "body": "Mag-top up at i-unlock lang ang mga episode na gusto mo. Hindi nag-e-expire ang coins." },
+      { "name": "Membership", "body": "Walang limitasyong episode, walang ads at maagang access sa mga bagong labas." }
+    ],
+    "plansNote": "Iaanunsyo ang presyo sa launch.",
+    "devicesTitle": "Saan manonood",
+    "devicesBody": "Ginawa ang Zippo para sa phone muna: iPhone at Android sa launch, susunod ang web at TV."
+  },
+  "comingSoon": {
+    "title": "Malapit na",
+    "description": "Malapit nang ilunsad ang Zippo. Tingnan ang countdown, ang mga unang palabas sa slate, at sumali sa waitlist para sa maagang access.",
+    "heading": "Nagsimula na ang countdown",
+    "subtitle": "Malapit nang magbukas ang Zippo. Mauuna ang mga nasa waitlist.",
+    "days": "Araw",
+    "hours": "Oras",
+    "minutes": "Minuto",
+    "seconds": "Segundo",
+    "dateNote": "Target na petsa ng launch. Maaaring magbago.",
+    "slateTitle": "Unang ipapalabas",
+    "slateSubtitle": "Ang mga unang original na ginagawa para sa launch."
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Mga sagot sa karaniwang tanong tungkol sa Zippo: presyo, episode, device, wika at launch.",
+    "heading": "Mga madalas itanong",
+    "subtitle": "Lahat ng kailangan mong malaman bago ang launch.",
+    "items": [
+      { "q": "Ano ang Zippo?", "a": "Ang Zippo ay streaming app para sa mini drama: buong kuwento sa maiikling vertical na episode na mga isang minuto bawat isa." },
+      { "q": "Kailan ilulunsad ang Zippo?", "a": "Malapit na! Sumali sa waitlist para ikaw ang unang makaalam, kasama ang maagang access bago ang public launch." },
+      { "q": "Libre ba ang Zippo?", "a": "Libre i-download ang Zippo, at libre ang mga unang episode ng bawat palabas. Makaka-unlock ka pa gamit ang coins o membership." },
+      { "q": "Gaano kahaba ang isang episode?", "a": "Karamihan ay isa hanggang tatlong minuto. Karaniwang may 50 hanggang 100 episode ang isang buong serye." },
+      { "q": "Saang device ako makakapanood?", "a": "iPhone at Android sa launch. Susunod ang web at TV app." },
+      { "q": "Anong mga wika ang suportado?", "a": "Subtitle at dubbed audio sa 12 wika sa launch, at marami pang darating." },
+      { "q": "Ano ang makukuha ko sa pagsali sa waitlist?", "a": "Maagang access bago ang public launch, libreng coins sa unang araw, at unang silip sa mga bagong palabas." },
+      { "q": "Puwede ko bang i-download ang mga episode para mapanood offline?", "a": "Plano naming ilabas ang offline viewing para sa members ilang sandali pagkatapos ng launch." }
+    ],
+    "more": "May tanong ka pa ba?",
+    "contact": "Makipag-ugnayan sa amin"
+  },
+  "about": {
+    "title": "Tungkol sa amin",
+    "description": "Binubuo ng Zippo ang tahanan ng mini drama: malalaking kuwento, isang minuto sa bawat pagkakataon.",
+    "heading": "Malalaking kuwento, isang minuto sa bawat pagkakataon",
+    "lead": "Naniniwala kami na hindi kailangan ng dalawang oras ng pinakamagagandang kuwento. Kailangan lang nila ng hook, puso at cliffhanger na hindi ka bibitawan.",
+    "sections": [
+      { "title": "Bakit namin binubuo ang Zippo", "body": "Daan-daang milyong tao na ang nanonood ng drama sa phone nang paunti-unti. Ginawa ang Zippo para rito mula sa simula: patayo, mabilis at mahirap bitawan." },
+      { "title": "Ano ang ginagawa namin", "body": "Mga original na serye sa romance, paghihiganti, thriller, fantasy at iba pa, ginawa kasama ang mga studio at storyteller mula sa buong mundo." },
+      { "title": "Saan kami papunta", "body": "Isang app, bawat wika, mga kuwento mula kahit saan. Nagsisimula kami sa isang slate ng mga original at lalago mula roon." }
+    ]
+  },
+  "contact": {
+    "title": "Makipag-ugnayan",
+    "description": "Makipag-ugnayan sa Zippo team para sa support, partnership o press.",
+    "heading": "Makipag-ugnayan",
+    "subtitle": "Mga tanong, ideya o partnership, binabasa namin ang bawat mensahe.",
+    "name": "Pangalan mo",
+    "email": "Email address",
+    "topic": "Paksa",
+    "topics": {
+      "general": "Pangkalahatang tanong",
+      "support": "Support",
+      "partnership": "Partnership",
+      "press": "Press"
+    },
+    "message": "Mensahe",
+    "submit": "Ipadala ang mensahe",
+    "sending": "Ipinapadala…",
+    "success": "Salamat! Babalikan ka namin agad.",
+    "error": "May nangyaring mali. Pakisubukang muli o mag-email sa amin nang direkta.",
+    "direct": "Mas gusto mo ba ang email?"
+  },
+  "press": {
+    "title": "Press",
+    "description": "Press kit ng Zippo: fact sheet, brand assets at media contact.",
+    "heading": "Press at media",
+    "subtitle": "Lahat ng kailangan mo para magsulat tungkol sa Zippo.",
+    "factsTitle": "Fact sheet",
+    "facts": [
+      { "label": "Ano", "value": "Streaming app para sa mini drama: vertical series sa tig-iisang minutong episode" },
+      { "label": "Launch", "value": "Malapit na sa iPhone at Android" },
+      { "label": "Mga genre", "value": "Romance, paghihiganti, CEO, thriller, fantasy, werewolf" },
+      { "label": "Mga wika", "value": "12 sa launch" }
+    ],
+    "kitTitle": "Brand assets",
+    "kitBody": "Ang aming logo at app icon. Pakiusap, huwag baguhin ang kulay o proporsyon.",
+    "logo": "I-download ang logo (SVG)",
+    "icon": "I-download ang icon (SVG)",
+    "contactTitle": "Media contact",
+    "contactBody": "Para sa interview, screener at balita sa launch, mag-email sa aming press team."
+  },
+  "creators": {
+    "title": "Makipagtulungan sa amin",
+    "description": "Mga studio, manunulat at direktor: i-pitch ang inyong mini drama sa Zippo.",
+    "heading": "Dalhin ang kuwento mo sa Zippo",
+    "subtitle": "Nakikipagtulungan kami sa mga studio, manunulat at direktor para sa aming launch slate.",
+    "points": [
+      { "title": "Mga studio", "body": "Mag-co-produce o mag-license ng tapos nang serye para sa pandaigdigang mobile-first na audience." },
+      { "title": "Mga manunulat", "body": "I-pitch ang hook, mundo at cliffhanger. Bubuuin namin ito kasama mo." },
+      { "title": "Mga direktor at talent", "body": "Sumali sa mga produksyong ginawa para sa patayo at episodic na pagkukuwento." }
+    ],
+    "formTitle": "Mag-pitch sa amin",
+    "name": "Pangalan mo",
+    "email": "Email address",
+    "company": "Studio o kumpanya (opsyonal)",
+    "link": "Link sa iyong gawa (opsyonal)",
+    "pitch": "Ang pitch mo sa ilang linya",
+    "submit": "Ipadala ang pitch",
+    "sending": "Ipinapadala…",
+    "success": "Salamat! Rerepasuhin ng aming content team ang pitch mo.",
+    "error": "May nangyaring mali. Pakisubukang muli."
+  },
+  "legal": {
+    "privacyTitle": "Patakaran sa Privacy",
+    "termsTitle": "Mga Tuntunin ng Serbisyo",
+    "privacyDescription": "Paano kinokolekta, ginagamit at pinoprotektahan ng Zippo ang iyong impormasyon.",
+    "termsDescription": "Ang mga tuntuning naaangkop kapag ginagamit mo ang Zippo.",
+    "notice": "Pansamantala: papalitan ang pahinang ito ng pinal na legal na teksto bago ang launch.",
+    "updated": "Huling na-update: {date}",
+    "privacy": [
+      { "title": "Ano ang kinokolekta namin", "body": "Kapag sumali ka sa waitlist, kinokolekta namin ang email address at gustong wika mo. Kapag nakipag-ugnayan ka, kinokolekta namin ang ipinadala mo." },
+      { "title": "Paano namin ito ginagamit", "body": "Para padalhan ka ng balita sa launch at maagang access, at para sagutin ang mga mensahe mo. Hindi namin ibinebenta kailanman ang personal mong impormasyon." },
+      { "title": "Ang mga pagpipilian mo", "body": "Puwede kang mag-unsubscribe anumang oras gamit ang link sa aming email, o hilingin sa aming burahin ang data mo." },
+      { "title": "Makipag-ugnayan", "body": "May tanong tungkol sa privacy? Mag-email sa amin at tutulungan ka namin." }
+    ],
+    "terms": [
+      { "title": "Paggamit ng site na ito", "body": "Nagbibigay ang website na ito ng impormasyon tungkol sa Zippo bago ang launch. Maaaring magbago ang nilalaman anumang oras." },
+      { "title": "Nilalaman", "body": "Ang mga pamagat at larawan ng palabas sa site na ito ay preview at maaaring magbago. Pagmamay-ari ng kani-kanilang may-ari ang lahat ng trademark." },
+      { "title": "Ang app", "body": "May hiwalay na tuntunin ang Zippo app na ilalathala sa launch." },
+      { "title": "Makipag-ugnayan", "body": "May tanong tungkol sa mga tuntuning ito? Mag-email sa amin." }
+    ]
+  },
+  "footer": {
+    "tagline": "Malaking drama. Maliliit na episode.",
+    "explore": "Tuklasin",
+    "company": "Kumpanya",
+    "legal": "Legal",
+    "follow": "Sundan kami",
+    "rights": "© {year} Zippo. Nakalaan ang lahat ng karapatan.",
+    "photos": "Mga larawan: Unsplash"
+  },
+  "notFound": {
+    "title": "Hindi nahanap ang pahina",
+    "heading": "Walang ganitong episode",
+    "body": "Inilipat o hindi kailanman ipinalabas ang pahinang hinahanap mo.",
+    "cta": "Bumalik sa home"
+  }
+}

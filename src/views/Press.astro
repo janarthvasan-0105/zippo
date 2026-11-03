@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Logo from '../components/Logo.astro';
+import { getDict } from '../i18n';
+import { EMAILS } from '../config';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang).press;
+---
+
+<Base lang={lang} page="press" title={t.title} description={t.description}>
+  <PageHeader heading={t.heading} subtitle={t.subtitle} />
+
+  <section class="container-x grid gap-6 lg:grid-cols-2">
+    <div class="card p-8">
+      <h2 class="font-display text-2xl font-bold">{t.factsTitle}</h2>
+      <dl class="mt-6 divide-y divide-steel/20">
+        {
+          t.facts.map((f) => (
+            <div class="grid gap-1 py-4 sm:grid-cols-[8rem_1fr] sm:gap-4">
+              <dt class="text-sm text-mist">{f.label}</dt>
+              <dd>{f.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+
+    <div class="space-y-6">
+      <div class="card p-8">
+        <h2 class="font-display text-2xl font-bold">{t.kitTitle}</h2>
+        <p class="mt-2 text-mist">{t.kitBody}</p>
+        <div class="mt-6 flex items-center justify-center rounded-2xl bg-ink p-10">
+          <Logo class="scale-150" />
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/brand/zippo-logo.svg" download class="btn btn-ghost">{t.logo}</a>
+          <a href="/favicon.svg" download="zippo-icon.svg" class="btn btn-ghost">{t.icon}</a>
+        </div>
+      </div>
+      <div class="card p-8">
+        <h2 class="font-display text-2xl font-bold">{t.contactTitle}</h2>
+        <p class="mt-2 text-mist">{t.contactBody}</p>
+        <a href={`mailto:${EMAILS.press}`} class="btn btn-primary mt-6" dir="ltr">{EMAILS.press}</a>
+      </div>
+    </div>
+  </section>
+</Base>

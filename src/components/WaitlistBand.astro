@@ -1,0 +1,21 @@
+---
+import WaitlistForm from './WaitlistForm.astro';
+import { getDict } from '../i18n';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang).waitlist;
+---
+
+<section id="waitlist" class="container-x mt-24 scroll-mt-24">
+  <div class="relative overflow-hidden rounded-[2.5rem] border border-steel/30 bg-gradient-to-br from-navy via-ink to-navy px-6 py-14 sm:px-12 sm:py-20">
+    <div class="glow pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    <div class="relative flex flex-col items-center text-center">
+      <h2 class="font-display text-4xl font-bold text-balance sm:text-5xl">{t.title}</h2>
+      <p class="mt-4 mb-8 max-w-xl text-lg text-mist">{t.subtitle}</p>
+      <WaitlistForm lang={lang} />
+    </div>
+  </div>
+</section>

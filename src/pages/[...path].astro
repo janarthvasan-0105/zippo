@@ -1,0 +1,45 @@
+---
+// Builds every page in every locale: /shows/, /hi/shows/, /ar/faq/ ...
+import { locales, defaultLocale } from '../i18n/locales.mjs';
+import { pages } from '../i18n/routes';
+import Home from '../views/Home.astro';
+import Shows from '../views/Shows.astro';
+import Genres from '../views/Genres.astro';
+import HowItWorks from '../views/HowItWorks.astro';
+import ComingSoon from '../views/ComingSoon.astro';
+import Faq from '../views/Faq.astro';
+import About from '../views/About.astro';
+import Contact from '../views/Contact.astro';
+import Press from '../views/Press.astro';
+import Creators from '../views/Creators.astro';
+import Legal from '../views/Legal.astro';
+
+export function getStaticPaths() {
+  return locales.flatMap((l) =>
+    pages.map((p) => {
+      const path = [l.code === defaultLocale ? '' : l.code, p.slug].filter(Boolean).join('/');
+      return { params: { path: path || undefined }, props: { lang: l.code, page: p.key } };
+    }),
+  );
+}
+
+const { lang, page } = Astro.props;
+
+const views = {
+  home: Home,
+  shows: Shows,
+  genres: Genres,
+  howItWorks: HowItWorks,
+  comingSoon: ComingSoon,
+  faq: Faq,
+  about: About,
+  contact: Contact,
+  press: Press,
+  creators: Creators,
+  privacy: Legal,
+  terms: Legal,
+};
+const View = views[page];
+---
+
+<View lang={lang} page={page} />

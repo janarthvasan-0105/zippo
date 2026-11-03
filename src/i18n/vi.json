@@ -1,0 +1,287 @@
+{
+  "_review": "machine translation, needs native review",
+  "meta": {
+    "siteName": "Zippo",
+    "tagline": "Drama lớn. Tập phim nhỏ.",
+    "description": "Zippo là ngôi nhà mới của phim ngắn mini drama: những bộ phim dọc gây nghiện với mỗi tập dài một phút. Tham gia danh sách chờ để được trải nghiệm sớm."
+  },
+  "nav": {
+    "skip": "Chuyển đến nội dung",
+    "home": "Trang chủ",
+    "shows": "Phim",
+    "genres": "Thể loại",
+    "howItWorks": "Cách hoạt động",
+    "comingSoon": "Sắp ra mắt",
+    "faq": "Hỏi đáp",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "press": "Báo chí",
+    "creators": "Hợp tác với chúng tôi",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản",
+    "joinWaitlist": "Tham gia danh sách chờ",
+    "menu": "Menu",
+    "language": "Ngôn ngữ"
+  },
+  "sample": {
+    "badge": "Mẫu",
+    "note": "Tên phim và hình ảnh chỉ là mẫu để xem trước. Danh sách phim ra mắt sẽ sớm được công bố."
+  },
+  "waitlist": {
+    "title": "Hãy là người đầu tiên",
+    "subtitle": "Nhận quyền truy cập sớm, xu miễn phí khi ra mắt và được xem trước mọi bộ phim mới.",
+    "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "ban@vidu.com",
+    "submit": "Tham gia danh sách chờ",
+    "sending": "Đang tham gia…",
+    "success": "Bạn đã có tên trong danh sách! Hãy theo dõi hộp thư để nhận quyền truy cập sớm.",
+    "error": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "fine": "Không spam. Hủy đăng ký bất cứ lúc nào."
+  },
+  "home": {
+    "title": "Zippo: Drama lớn. Tập phim nhỏ.",
+    "description": "Phim dọc gây nghiện với mỗi tập một phút. Lãng mạn, báo thù, tỷ phú và người sói, làm riêng cho điện thoại của bạn. Tham gia danh sách chờ Zippo.",
+    "hero": {
+      "eyebrow": "Sắp ra mắt",
+      "title1": "Drama lớn.",
+      "title2": "Tập phim nhỏ.",
+      "subtitle": "Phim dọc gây nghiện kể qua những tập dài một phút. Tập nào cũng kết thúc lửng lơ, nên “thêm một tập nữa” chẳng bao giờ chỉ là một.",
+      "secondary": "Khám phá phim"
+    },
+    "phone": {
+      "episode": "Tập {n}",
+      "caption1": "“Em đã ký hợp đồng. Giờ em thuộc về anh.”",
+      "caption2": "“Chúng đã chôn tôi một lần. Sẽ không có lần thứ hai.”",
+      "caption3": "“Mỉm cười trước ống kính đi em. Đêm nay ta kết liễu chúng.”"
+    },
+    "what": {
+      "title": "Mini drama là gì?",
+      "subtitle": "Một câu chuyện trọn vẹn được chia thành những tập ngắn, quay dọc cho màn hình trong tay bạn.",
+      "items": [
+        { "title": "Tập phim một phút", "body": "Xem trọn một tập trong lúc pha cà phê. Xem hết cả bộ trên đường đi làm." },
+        { "title": "Tập nào cũng gây cấn", "body": "Người thừa kế bí mật, hôn nhân giả và những phản bội gây sốc. Phút nào cũng kết thúc bằng một cú twist." },
+        { "title": "Làm cho điện thoại", "body": "Quay dọc, toàn màn hình, chỉ cần một ngón tay. Không bao giờ phải xoay điện thoại." }
+      ]
+    },
+    "trending": {
+      "title": "Xem trước danh sách phim",
+      "subtitle": "Một chút hương vị từ những câu chuyện chúng tôi đang làm. Danh sách đầy đủ sẽ được công bố khi ra mắt.",
+      "viewAll": "Xem tất cả phim"
+    },
+    "how": {
+      "title": "Zippo hoạt động thế nào",
+      "steps": [
+        { "title": "Chọn một câu chuyện", "body": "Duyệt theo tâm trạng: lãng mạn, báo thù, giật gân, giả tưởng và nhiều hơn nữa." },
+        { "title": "Xem tập miễn phí", "body": "Những tập đầu của mọi bộ phim đều miễn phí, không cần thẻ." },
+        { "title": "Mở khóa phần còn lại", "body": "Dùng xu để mở từng tập hoặc xem không giới hạn với gói thành viên." }
+      ]
+    },
+    "why": {
+      "title": "Làm cho cách bạn xem phim",
+      "items": [
+        { "title": "Tập mới mỗi ngày", "body": "Phát hành mỗi ngày, nên luôn có tập tiếp theo." },
+        { "title": "Ngôn ngữ của bạn", "body": "Phụ đề và lồng tiếng 12 ngôn ngữ khi ra mắt." },
+        { "title": "Miễn phí để bắt đầu", "body": "Bắt đầu xem mà không tốn đồng nào." },
+        { "title": "Gợi ý cho bạn", "body": "Bạn xem càng nhiều, bảng tin càng hợp gu." }
+      ]
+    },
+    "creatorsTeaser": {
+      "title": "Bạn có câu chuyện không thể chờ?",
+      "body": "Chúng tôi đang hợp tác với các studio, biên kịch và đạo diễn cho danh sách phim ra mắt.",
+      "cta": "Hợp tác với chúng tôi"
+    }
+  },
+  "shows": {
+    "title": "Phim",
+    "description": "Xem trước các mini drama sắp có trên Zippo: lãng mạn, báo thù, chuyện CEO, giật gân, giả tưởng và người sói.",
+    "heading": "Danh sách phim",
+    "subtitle": "Những câu chuyện cuốn hút cho mọi tâm trạng. Xem trước những gì sắp đến.",
+    "all": "Tất cả",
+    "episodes": "{n} tập",
+    "atLaunch": "Khi ra mắt",
+    "premieres": "Công chiếu {date}"
+  },
+  "genres": {
+    "title": "Thể loại",
+    "description": "Duyệt mini drama trên Zippo theo tâm trạng: lãng mạn, báo thù, CEO, giật gân, giả tưởng và người sói.",
+    "heading": "Tìm thể loại drama của bạn",
+    "subtitle": "Dù tâm trạng thế nào, luôn có một câu chuyện đang chờ bạn.",
+    "count": "{n} phim",
+    "browse": "Xem {genre}",
+    "names": {
+      "romance": "Lãng mạn",
+      "revenge": "Báo thù",
+      "ceo": "CEO",
+      "thriller": "Giật gân",
+      "fantasy": "Giả tưởng",
+      "werewolf": "Người sói"
+    },
+    "blurbs": {
+      "romance": "Tình yêu chậm rãi, cơ hội thứ hai và tình yêu phá vỡ mọi quy tắc.",
+      "revenge": "Bị coi thường, bị phản bội và trở lại để giành lấy tất cả.",
+      "ceo": "Tỷ phú, hợp đồng và bí mật phòng họp.",
+      "thriller": "Cửa khóa chặt, những giờ biến mất và không ai đáng tin.",
+      "fantasy": "Vương quốc ẩn giấu, lời nguyền cổ xưa và sức mạnh cấm kỵ.",
+      "werewolf": "Bạn đời định mệnh, bầy sói đối địch và vầng trăng thay đổi tất cả."
+    }
+  },
+  "howItWorks": {
+    "title": "Cách hoạt động",
+    "description": "Cách Zippo hoạt động: tập miễn phí, xu, gói thành viên và các thiết bị bạn có thể xem.",
+    "heading": "Zippo hoạt động thế nào",
+    "subtitle": "Dễ bắt đầu, khó dừng lại.",
+    "steps": [
+      { "title": "Tải ứng dụng", "body": "Tải Zippo miễn phí trên iPhone và Android khi ra mắt." },
+      { "title": "Chọn một câu chuyện", "body": "Duyệt theo thể loại hoặc để bảng tin tìm nỗi ám ảnh tiếp theo của bạn." },
+      { "title": "Xem tập miễn phí", "body": "Những tập mở đầu của mọi bộ phim luôn miễn phí." },
+      { "title": "Xem tiếp", "body": "Mở khóa thêm bằng xu, hoặc xem không giới hạn với gói thành viên." }
+    ],
+    "plansTitle": "Cách xem",
+    "plans": [
+      { "name": "Miễn phí", "body": "Những tập đầu của mọi bộ phim, cùng lượt mở khóa miễn phí mỗi ngày." },
+      { "name": "Xu", "body": "Nạp xu và mở đúng những tập bạn muốn. Xu không bao giờ hết hạn." },
+      { "name": "Thành viên", "body": "Không giới hạn tập, không quảng cáo và xem sớm phim mới." }
+    ],
+    "plansNote": "Giá sẽ được công bố khi ra mắt.",
+    "devicesTitle": "Xem ở đâu",
+    "devicesBody": "Zippo ưu tiên điện thoại: iPhone và Android khi ra mắt, sau đó là web và TV."
+  },
+  "comingSoon": {
+    "title": "Sắp ra mắt",
+    "description": "Zippo sắp ra mắt. Xem đồng hồ đếm ngược, những bộ phim đầu tiên và tham gia danh sách chờ để được truy cập sớm.",
+    "heading": "Bắt đầu đếm ngược",
+    "subtitle": "Zippo sắp mở cửa. Thành viên danh sách chờ được vào trước.",
+    "days": "Ngày",
+    "hours": "Giờ",
+    "minutes": "Phút",
+    "seconds": "Giây",
+    "dateNote": "Ngày ra mắt dự kiến. Có thể thay đổi.",
+    "slateTitle": "Công chiếu đầu tiên",
+    "slateSubtitle": "Những phim gốc đầu tiên đang sản xuất cho ngày ra mắt."
+  },
+  "faq": {
+    "title": "Hỏi đáp",
+    "description": "Giải đáp các câu hỏi thường gặp về Zippo: giá, tập phim, thiết bị, ngôn ngữ và ngày ra mắt.",
+    "heading": "Câu hỏi thường gặp",
+    "subtitle": "Mọi điều bạn cần biết trước khi ra mắt.",
+    "items": [
+      { "q": "Zippo là gì?", "a": "Zippo là ứng dụng xem mini drama: những câu chuyện trọn vẹn kể qua các tập phim dọc ngắn, mỗi tập khoảng một phút." },
+      { "q": "Khi nào Zippo ra mắt?", "a": "Sắp rồi! Tham gia danh sách chờ để là người biết đầu tiên, với quyền truy cập sớm trước khi ra mắt chính thức." },
+      { "q": "Zippo có miễn phí không?", "a": "Tải Zippo miễn phí, và những tập đầu của mọi bộ phim đều miễn phí. Bạn có thể mở thêm bằng xu hoặc gói thành viên." },
+      { "q": "Mỗi tập dài bao lâu?", "a": "Phần lớn các tập dài từ một đến ba phút. Một bộ phim thường có từ 50 đến 100 tập." },
+      { "q": "Tôi có thể xem trên thiết bị nào?", "a": "iPhone và Android khi ra mắt. Ứng dụng web và TV sẽ có sau." },
+      { "q": "Hỗ trợ những ngôn ngữ nào?", "a": "Phụ đề và lồng tiếng 12 ngôn ngữ khi ra mắt, và sẽ có thêm nữa." },
+      { "q": "Tham gia danh sách chờ được gì?", "a": "Truy cập sớm trước khi ra mắt chính thức, xu miễn phí ngày đầu tiên và được xem trước phim mới." },
+      { "q": "Tôi có thể tải tập phim để xem ngoại tuyến không?", "a": "Tính năng xem ngoại tuyến dự kiến dành cho thành viên ngay sau khi ra mắt." }
+    ],
+    "more": "Vẫn còn thắc mắc?",
+    "contact": "Liên hệ với chúng tôi"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "description": "Zippo đang xây dựng ngôi nhà cho mini drama: những câu chuyện lớn, mỗi lần một phút.",
+    "heading": "Câu chuyện lớn, mỗi lần một phút",
+    "lead": "Chúng tôi tin rằng những câu chuyện hay nhất không cần đến hai tiếng. Chúng cần một điểm hút, một trái tim và một cái kết lửng không buông tha bạn.",
+    "sections": [
+      { "title": "Vì sao chúng tôi làm Zippo", "body": "Hàng trăm triệu người đã xem drama trên điện thoại trong những khoảng thời gian ngắn. Zippo được làm cho điều đó ngay từ đầu: dọc, nhanh và khó rời mắt." },
+      { "title": "Chúng tôi làm gì", "body": "Phim gốc thuộc thể loại lãng mạn, báo thù, giật gân, giả tưởng và nhiều hơn nữa, sản xuất cùng các studio và người kể chuyện trên khắp thế giới." },
+      { "title": "Chúng tôi hướng tới đâu", "body": "Một ứng dụng, mọi ngôn ngữ, câu chuyện từ khắp nơi. Chúng tôi bắt đầu với một loạt phim gốc và sẽ tiếp tục phát triển." }
+    ]
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "description": "Liên hệ đội ngũ Zippo về hỗ trợ, hợp tác hoặc báo chí.",
+    "heading": "Liên hệ",
+    "subtitle": "Câu hỏi, ý tưởng hay hợp tác, chúng tôi đọc mọi tin nhắn.",
+    "name": "Tên của bạn",
+    "email": "Địa chỉ email",
+    "topic": "Chủ đề",
+    "topics": {
+      "general": "Câu hỏi chung",
+      "support": "Hỗ trợ",
+      "partnership": "Hợp tác",
+      "press": "Báo chí"
+    },
+    "message": "Tin nhắn",
+    "submit": "Gửi tin nhắn",
+    "sending": "Đang gửi…",
+    "success": "Cảm ơn bạn! Chúng tôi sẽ sớm phản hồi.",
+    "error": "Đã xảy ra lỗi. Vui lòng thử lại hoặc gửi email trực tiếp cho chúng tôi.",
+    "direct": "Thích gửi email hơn?"
+  },
+  "press": {
+    "title": "Báo chí",
+    "description": "Bộ tài liệu báo chí của Zippo: thông tin tóm tắt, tài sản thương hiệu và liên hệ truyền thông.",
+    "heading": "Báo chí & truyền thông",
+    "subtitle": "Mọi thứ bạn cần để viết về Zippo.",
+    "factsTitle": "Thông tin tóm tắt",
+    "facts": [
+      { "label": "Là gì", "value": "Ứng dụng xem mini drama: phim dọc với mỗi tập một phút" },
+      { "label": "Ra mắt", "value": "Sắp có trên iPhone và Android" },
+      { "label": "Thể loại", "value": "Lãng mạn, báo thù, CEO, giật gân, giả tưởng, người sói" },
+      { "label": "Ngôn ngữ", "value": "12 khi ra mắt" }
+    ],
+    "kitTitle": "Tài sản thương hiệu",
+    "kitBody": "Logo và biểu tượng ứng dụng của chúng tôi. Vui lòng không thay đổi màu sắc hoặc tỷ lệ.",
+    "logo": "Tải logo (SVG)",
+    "icon": "Tải biểu tượng (SVG)",
+    "contactTitle": "Liên hệ truyền thông",
+    "contactBody": "Để phỏng vấn, xem trước và tin tức ra mắt, hãy gửi email cho đội báo chí của chúng tôi."
+  },
+  "creators": {
+    "title": "Hợp tác với chúng tôi",
+    "description": "Studio, biên kịch và đạo diễn: gửi ý tưởng mini drama của bạn đến Zippo.",
+    "heading": "Đưa câu chuyện của bạn đến Zippo",
+    "subtitle": "Chúng tôi đang hợp tác với các studio, biên kịch và đạo diễn cho danh sách phim ra mắt.",
+    "points": [
+      { "title": "Studio", "body": "Đồng sản xuất hoặc cấp phép phim hoàn chỉnh cho khán giả toàn cầu xem trên di động." },
+      { "title": "Biên kịch", "body": "Đề xuất một điểm hút, một thế giới và một cái kết lửng. Chúng tôi phát triển cùng bạn." },
+      { "title": "Đạo diễn & diễn viên", "body": "Tham gia các dự án quay cho lối kể chuyện dọc, nhiều tập." }
+    ],
+    "formTitle": "Gửi ý tưởng",
+    "name": "Tên của bạn",
+    "email": "Địa chỉ email",
+    "company": "Studio hoặc công ty (không bắt buộc)",
+    "link": "Liên kết đến tác phẩm của bạn (không bắt buộc)",
+    "pitch": "Ý tưởng của bạn trong vài dòng",
+    "submit": "Gửi ý tưởng",
+    "sending": "Đang gửi…",
+    "success": "Cảm ơn bạn! Đội nội dung của chúng tôi sẽ xem xét ý tưởng của bạn.",
+    "error": "Đã xảy ra lỗi. Vui lòng thử lại."
+  },
+  "legal": {
+    "privacyTitle": "Chính sách quyền riêng tư",
+    "termsTitle": "Điều khoản dịch vụ",
+    "privacyDescription": "Cách Zippo thu thập, sử dụng và bảo vệ thông tin của bạn.",
+    "termsDescription": "Các điều khoản áp dụng khi bạn sử dụng Zippo.",
+    "notice": "Tạm thời: trang này sẽ được thay bằng văn bản pháp lý chính thức trước khi ra mắt.",
+    "updated": "Cập nhật lần cuối: {date}",
+    "privacy": [
+      { "title": "Chúng tôi thu thập gì", "body": "Khi bạn tham gia danh sách chờ, chúng tôi thu thập email và ngôn ngữ ưa thích của bạn. Khi bạn liên hệ, chúng tôi thu thập nội dung bạn gửi." },
+      { "title": "Chúng tôi sử dụng thế nào", "body": "Để gửi tin ra mắt và quyền truy cập sớm, và để trả lời tin nhắn của bạn. Chúng tôi không bao giờ bán thông tin cá nhân của bạn." },
+      { "title": "Lựa chọn của bạn", "body": "Bạn có thể hủy đăng ký bất cứ lúc nào qua liên kết trong email, hoặc yêu cầu chúng tôi xóa dữ liệu của bạn." },
+      { "title": "Liên hệ", "body": "Có câu hỏi về quyền riêng tư? Hãy gửi email, chúng tôi sẽ hỗ trợ." }
+    ],
+    "terms": [
+      { "title": "Sử dụng trang web", "body": "Trang web này cung cấp thông tin về Zippo trước khi ra mắt. Nội dung có thể thay đổi bất cứ lúc nào." },
+      { "title": "Nội dung", "body": "Tên phim và hình ảnh trên trang này là bản xem trước và có thể thay đổi. Mọi nhãn hiệu thuộc về chủ sở hữu." },
+      { "title": "Ứng dụng", "body": "Ứng dụng Zippo sẽ có điều khoản riêng, được công bố khi ra mắt." },
+      { "title": "Liên hệ", "body": "Có câu hỏi về các điều khoản này? Hãy gửi email cho chúng tôi." }
+    ]
+  },
+  "footer": {
+    "tagline": "Drama lớn. Tập phim nhỏ.",
+    "explore": "Khám phá",
+    "company": "Công ty",
+    "legal": "Pháp lý",
+    "follow": "Theo dõi chúng tôi",
+    "rights": "© {year} Zippo. Bảo lưu mọi quyền.",
+    "photos": "Ảnh: Unsplash"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "heading": "Tập phim này không tồn tại",
+    "body": "Trang bạn tìm đã bị chuyển đi hoặc chưa từng được phát sóng.",
+    "cta": "Về trang chủ"
+  }
+}

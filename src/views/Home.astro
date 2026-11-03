@@ -1,0 +1,152 @@
+---
+import Base from '../layouts/Base.astro';
+import PhoneMockup from '../components/PhoneMockup.astro';
+import Poster from '../components/Poster.astro';
+import WaitlistBand from '../components/WaitlistBand.astro';
+import { getDict, href } from '../i18n';
+import { shows } from '../data/shows';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+const t = getDict(lang);
+const h = t.home;
+const trending = shows.filter((s) => s.release === 'launch').slice(0, 8);
+
+const icons = [
+  'M12 6v6l4 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z',
+  'M13 2 4 14h7l-1 8 9-12h-7l1-8z',
+  'M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM11 18h2',
+  'M12 3v18M3 12h18',
+];
+
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Zippo',
+  url: Astro.site?.href,
+  logo: new URL('/favicon.svg', Astro.site).href,
+  description: t.meta.description,
+};
+---
+
+<Base lang={lang} page="home" title={h.title} description={h.description} jsonLd={[orgLd]}>
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="glow pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    <div class="container-x relative grid items-center gap-14 pt-12 pb-20 lg:grid-cols-[1.15fr_1fr] lg:pt-20 lg:pb-28">
+      <div class="text-center lg:text-start">
+        <p class="inline-flex items-center gap-2 rounded-full border border-steel/40 bg-navy/50 px-4 py-1.5 text-sm text-mist">
+          <span class="size-2 animate-pulse rounded-full bg-ice"></span>
+          {h.hero.eyebrow}
+        </p>
+        <h1 class="font-display mt-6 text-5xl leading-[1.05] font-bold tracking-tight sm:text-7xl">
+          <span class="block">{h.hero.title1}</span>
+          <span class="block bg-gradient-to-r from-ice via-mist to-steel bg-clip-text text-transparent italic">{h.hero.title2}</span>
+        </h1>
+        <p class="mx-auto mt-6 max-w-xl text-lg text-mist sm:text-xl lg:mx-0">{h.hero.subtitle}</p>
+        <div class="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+          <a href="#waitlist" class="btn btn-primary w-full px-8 py-4 sm:w-auto" data-track="hero_waitlist">{t.waitlist.submit}</a>
+          <a href={href(lang, 'shows')} class="btn btn-ghost w-full px-8 py-4 sm:w-auto">{h.hero.secondary}</a>
+        </div>
+      </div>
+      <PhoneMockup lang={lang} />
+    </div>
+  </section>
+
+  <!-- What is a mini drama -->
+  <section class="container-x mt-8">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold sm:text-5xl">{h.what.title}</h2>
+      <p class="mt-4 text-lg text-mist">{h.what.subtitle}</p>
+    </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-3">
+      {
+        h.what.items.map((item, i) => (
+          <div class="card p-7">
+            <span class="font-display text-5xl font-bold text-steel">0{i + 1}</span>
+            <h3 class="mt-4 text-xl font-semibold">{item.title}</h3>
+            <p class="mt-2 text-mist">{item.body}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Trending -->
+  <section class="mt-24">
+    <div class="container-x flex flex-wrap items-end justify-between gap-4">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold sm:text-5xl">{h.trending.title}</h2>
+        <p class="mt-4 text-lg text-mist">{h.trending.subtitle}</p>
+      </div>
+      <a href={href(lang, 'shows')} class="btn btn-ghost">{h.trending.viewAll}</a>
+    </div>
+    <div class="container-x mt-10">
+      <ul class="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6 [&::-webkit-scrollbar]:hidden" style="scrollbar-width: none">
+        {
+          trending.map((show) => (
+            <li class="w-[44vw] max-w-60 shrink-0 snap-start sm:w-56">
+              <Poster show={show} lang={lang} sizes="(min-width: 640px) 224px, 44vw" />
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-4 text-sm text-mist">{t.sample.note}</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="container-x mt-24">
+    <div class="card relative overflow-hidden p-8 sm:p-12">
+      <div class="glow pointer-events-none absolute inset-0 opacity-60" aria-hidden="true"></div>
+      <div class="relative">
+        <h2 class="font-display text-3xl font-bold sm:text-5xl">{h.how.title}</h2>
+        <ol class="mt-10 grid gap-8 md:grid-cols-3">
+          {
+            h.how.steps.map((step, i) => (
+              <li class="relative">
+                <span class="flex size-12 items-center justify-center rounded-full bg-ice text-lg font-bold text-ink">{i + 1}</span>
+                <h3 class="mt-5 text-xl font-semibold">{step.title}</h3>
+                <p class="mt-2 text-mist">{step.body}</p>
+              </li>
+            ))
+          }
+        </ol>
+        <a href={href(lang, 'howItWorks')} class="btn btn-ghost mt-10">{t.nav.howItWorks}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Zippo -->
+  <section class="container-x mt-24">
+    <h2 class="font-display max-w-2xl text-3xl font-bold sm:text-5xl">{h.why.title}</h2>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        h.why.items.map((item, i) => (
+          <div class="card p-6">
+            <svg viewBox="0 0 24 24" class="size-8 text-ice" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d={icons[i]} />
+            </svg>
+            <h3 class="mt-5 text-lg font-semibold">{item.title}</h3>
+            <p class="mt-2 text-mist">{item.body}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <WaitlistBand lang={lang} />
+
+  <!-- Creators teaser (secondary audience, kept low on the page) -->
+  <section class="container-x mt-16">
+    <div class="flex flex-col items-start justify-between gap-6 rounded-3xl border border-steel/20 p-8 sm:flex-row sm:items-center">
+      <div>
+        <h2 class="text-xl font-semibold">{h.creatorsTeaser.title}</h2>
+        <p class="mt-1 text-mist">{h.creatorsTeaser.body}</p>
+      </div>
+      <a href={href(lang, 'creators')} class="btn btn-ghost shrink-0">{h.creatorsTeaser.cta}</a>
+    </div>
+  </section>
+</Base>

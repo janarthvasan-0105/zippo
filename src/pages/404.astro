@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDict, href } from '../i18n';
+
+const t = getDict('en').notFound;
+---
+
+<Base lang="en" page="home" title={t.title} description={t.body} noindex>
+  <section class="container-x flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
+    <p class="font-display text-8xl font-bold text-steel">404</p>
+    <h1 class="font-display mt-4 text-4xl font-bold sm:text-5xl">{t.heading}</h1>
+    <p class="mt-4 max-w-md text-lg text-mist">{t.body}</p>
+    <a href={href('en')} class="btn btn-primary mt-8">{t.cta}</a>
+  </section>
+</Base>
